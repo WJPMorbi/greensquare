@@ -279,7 +279,7 @@ nav .logo img{
 .welcome_msg h1{
     font-size: 150px;
     font-weight: 900;
-    line-height: 150px;
+    line-height: 100%;
 }
 .welcome_msg p{
     font-size: 20px;
@@ -315,9 +315,11 @@ animation-timeline: view() ;
   }
     .welcome_msg{
         top: 50%;
+       
     }
     .welcome_msg h1{
-        font-size: 70px;
+        font-size: 60px;
+        margin-bottom: 20px;
     }
     .welcome_msg p{
         font-size: 16px;
