@@ -1,0 +1,776 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Poppins:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;400;500;600;700&display=swap');
+@font-face {
+    src:url(../fonts/Caption.ttf);
+    font-family: 'Caption';
+}
+@font-face {
+  font-family: 'timing';
+  src: url(../fonts/timing.ttf);
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+}
+:root {
+    --GS-1stClr : #9ef166;
+    --GS-2ndClr : #4cd6a3;
+    --GS-3rdClr : #1478eb;
+    --GS-2ndClr-dark : #fff;
+    --Hindi-font : Noto Sans Devanagari;
+    --Grey-font: hsl(0 0% 100%/0.2);
+
+}
+body {
+    width: 100%;
+    background:#000;
+    position: relative;
+}
+.cursor-dot{
+  width: 5px;
+  height: 5px;
+  background: #fff;
+}
+.cursor-outline{
+  width: 30px;
+  height: 30px;
+  border: 2px solid hsla(0, 0%, 100%, 0.5);
+}
+.cursor-dot, .cursor-outline{
+  position: fixed;
+  top: 0;left: 0;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  z-index: 100000000;
+  pointer-events: none;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient( rgb(0 0 0 / 1),rgb(0 0 0 / 0.8)), url(../img/heade_img.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.sub-header{
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;  
+  
+}
+@media screen and (max-width:720px) {
+  .sub-header{
+    height: 100vh;
+  }
+}
+.sub-header-osho{
+  background-image:linear-gradient(to right, rgb(0 0 0 / 0.8), rgb(0 0 0/0.5) , #111), url(../img/Osho-content-bg.jpg);
+  background-position: 100% 40%;
+  opacity: 0;
+  transition:all 1.5s ease;
+}
+.header-msg{
+  width: 80%;
+  height: 50vh;
+  margin: auto;
+  margin-top: 100px;
+}
+.header-msg h1{
+  color: #fff;
+  font-size: 120px;
+  font-family: 'Heebo';
+  line-height: 100%;
+  text-align: left;
+  margin-bottom: 50px;
+}
+.header-msg h1 span{
+  color: #555;
+}
+/* =============================== HERO BUTTON ===================================== */
+.hero-btn{
+  padding: 10px 25px;
+  background-size: 350% 100%;
+  cursor: pointer;
+  border-radius: 10px 0 10px 0;
+  transition:all 0.6s ease;
+  background-image: linear-gradient(to right, var(--GS-3rdClr),#fff,#fff, var(--GS-3rdClr));
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: 'poppins';
+  width: 250px;
+  text-align: center;
+}
+.hero-btn a{
+  color: #fff;
+  padding: 10px 50px;
+}
+.hero-btn:hover{
+  background-position: 100% 0;
+}
+
+@media (max-width:800px) {
+  .header-msg h1{
+    font-size: 60px;
+  }
+}
+nav {
+    position: relative;
+    max-width: 100%;
+    padding: 2% 5%;
+    font-family: 'poppins', serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo img{
+    width: 300px;
+}
+#navLinks{
+    flex: 1;
+    text-align: right;
+}
+#navLinks ul li{
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 10px;
+}
+.hidden{
+    opacity: 0;
+    transform: translateY(25px);
+    transition: all 0.6s ease;
+}
+.visible {
+    opacity: 1;
+    transform: translateY(05px);
+    transition: all 0.6s ease;
+}
+#navLinks ul li a::after{
+    content: '';
+    position: relative;
+    display: block;
+    background-image: linear-gradient(to right, var(--GS-1stClr), var(--GS-2ndClr));
+    width:10%;
+    height: 3px;
+    border-radius: 2px;
+    transition: 0.6s;
+    margin: auto;
+}
+#navLinks ul li:hover a::after{
+    width: 100%;
+}
+#navLinks ul li a{
+    color: #fff;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.MenuBtn{
+    color: #fff;
+    font-size: 25px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    display: none;
+}
+.PortNav{
+    display: none;
+}
+@media (max-width:800px){
+    .MenuBtn{
+        display: block;
+        transition: 0.6s;
+    }
+    .LandNav{
+        display: none;
+    }
+    .PortNav{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        left: -320px;
+        width: 320px;
+        height: 100vh;
+        background: rgb(0, 0, 0,0.1);
+        text-align: left;
+        backdrop-filter: blur(10px);
+        transition: 0.5s ease;
+        border-radius: 10px;
+        padding-top: 5px;
+        z-index: 999999;
+    }
+    .PortNav .logo{
+      padding: 2%;
+      background-image: linear-gradient(#000 60%,transparent);
+    }
+    #navLinks .PortNav li{
+        margin: 5px 10px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: 0.6s;
+        cursor: pointer;
+    }
+    #navLinks .PortNav li a{
+      padding: 10px 70% 10px 0 ;
+    }
+    .PortNav .nav-con-icon {
+      position: absolute;
+      bottom: 100px;
+      left: 100px;
+
+    }
+    .PortNav .nav-con-icon a{
+      color: #fff;
+      font-size: 25px;
+      margin:0 10px;
+    }
+    .PortNav .nav-con-icon a:hover{
+      color: hsl(0 0% 100%/0.2);
+    background-clip: text;
+    background-image: linear-gradient(90deg, #f1e90c, rgb(18, 221, 190));
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    }
+    #navLinks ul li a::after{
+        display: none;
+    }
+    #navLinks .PortNav li:hover{
+        background-image: linear-gradient(to right, var(--GS-1stClr), var(--GS-2ndClr));
+    }
+    #navLinks .PortNav li:hover a{
+        color: #222;
+        font-weight: 600;
+    }
+    #nav_check:checked ~ #navLinks .PortNav {
+        left: 0px;
+    }
+    #nav_check:checked ~ .MenuBtn{
+        transform: rotate(-90deg);
+    }
+}
+
+/* ------------------------- Welcome ------------------------- */
+.welcome{
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient(30deg, #e72cbe, #2849ed, #10be8a);
+    position: relative;
+}
+.welcome_msg{
+    color: #fff;
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    text-align: center;
+    font-family: 'Poppins';
+    height: 50%;
+}
+.welcome_msg h1{
+    font-size: 150px;
+    font-weight: 900;
+    line-height: 150px;
+}
+.welcome_msg p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+.welcome_msg span{
+color: hsl(0 0% 100%/0.2);
+background-clip: text;
+background-image: linear-gradient(90deg, #fff, #fff);
+background-repeat: no-repeat;
+background-size: 0% 100%;
+animation: scroll-reveal linear forwards;
+animation-timeline: view() ;
+}
+.welcome_msg h1 span{
+    animation-range-start: cover 20vh;
+    animation-range-end: cover 30vh;
+}
+
+.welcome_msg p span{
+    animation-range-start: cover 21vh;
+    animation-range-end: contain 30vh;
+}
+@keyframes scroll-reveal{
+    to {
+        background-size: 100% 100%;
+    }
+}
+@media (max-width:800px){
+  .welcome{
+    height: 100vh;
+  }
+    .welcome_msg{
+        top: 50%;
+    }
+    .welcome_msg h1{
+        font-size: 70px;
+    }
+    .welcome_msg p{
+        font-size: 16px;
+    }
+    .welcome_msg p span{
+      animation-range-start: cover 21vh;
+      animation-range-end: contain 10vh;
+  }
+}
+
+  /* =============================== OUR CONTENT ===================================== */
+.our_content{
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    margin:0 auto;
+    padding:100px 150px;
+    font-family: 'poppins',serif;
+    position: relative;
+    color: #fff;
+  }
+  .our_content h1{
+    font-size:60px;
+    line-height:70px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'poppins',serif;
+  }
+  .our_content p{
+    width: 80%;
+    font-size: 15px;
+    line-height: 20px;
+    color: hsl(0 0% 100%/0.2);
+    background-clip: text;
+    background-image: linear-gradient(90deg, #000000, rgb(44, 56, 54));
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: auto;
+  }
+  @media (max-width:800px){
+    .our_content{
+      margin-left: 0;
+      padding: 50px 30px ;
+      height:auto; width: 100%;
+      max-width: 100%;
+      text-align: left;
+      
+    }
+    .our_content h1{
+      font-size: 50px;
+      line-height: 50px;
+      margin-bottom: 20px;
+    }
+    .our_content p{
+      line-height: 20px;
+      font-size: 15px;
+      margin: 0;
+      width: 100%;
+      
+    }
+  }
+  /* ============================== COntent BOx ======================================== */
+  .content_box{
+    max-width: 1120px;
+    width: 100%;
+    height: 520px;
+    display: block;
+    backdrop-filter: blur(10px);
+    background: #111;
+    margin:0 auto;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 100px;
+  }
+  .cont-img, .cont-img2{
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 20px;
+    position: absolute;
+  }
+  .cont-img{
+    background-image:linear-gradient(to right, transparent, #111),url(../img/Osho-content-bg.jpg);
+    top: 0;left: 0;
+  }
+  .cont-img2{
+    background-image: linear-gradient(to right, #111, transparent), url(../img/Book-self.jpeg);
+    top: 0;right: 0;
+    background-position: 0% 0%;
+  }
+
+  .content_inner,.content_inner2{
+    width: 50%;
+    position: absolute;
+    height: 50%;
+    overflow: hidden;
+  }
+  .content_inner{
+    right: 50px;
+    top: 50px;
+    text-align: right;
+  }
+  .content_inner2{
+    left: 50px;
+    top: 50px;
+  }
+  .content_box h1{
+    color: #fff;
+    font-family: 'Heebo';
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .content_box p{
+    color: #9d9d9ddf;
+    font-family: 'poppins';
+    overflow-y: hidden;
+    font-size: 15px;
+    font-weight: normal;
+    height: 100%;
+    line-height: 140%;
+  }
+  .hindi-lang{
+    display: none;
+  }
+  .eng-lang{
+    display: block;
+  }
+  .content-btn{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+  }
+  .content-btn2{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+  }
+  /* -------------------------- Media Query For CONTENT -----------------------  */
+  @media screen and (max-width:720px){
+    .content_box{
+      width: 90%;
+      height: 50vh;
+      margin-bottom: 50px;
+    }
+    .content_inner,.content_inner2{
+      width: 100%;
+      position: absolute;
+      height: 70%;
+      overflow: hidden;
+      padding: 30px;
+      right: 0;left: 0;top: 0;
+      z-index: 10;
+    }
+    .content_box h1{
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    .cont-img, .cont-img2{
+      background-position: 50% 50%;
+      width: 70%;
+    }
+    .cont-img{
+      background-image:linear-gradient(to right, rgb(1,1,1,0.5), #111),url(../img/Osho-content-bg.jpg);
+      top: 0;left: 0;
+    }
+    .cont-img2{
+      background-image: linear-gradient(to right, #111, rgb(1,1,1,0.5)), url(../img/Book-self.jpeg);
+      top: 0;right: 0;
+      background-position: 0% 0%;
+    }
+    .content-btn{
+      bottom: 30px;
+      right: 30px;
+    }
+    .content-btn2{
+      bottom: 30px;
+      left: 30px;
+    }
+  }
+  
+
+  /* =================================== FOOTER ======================================== */
+
+  footer{
+    width: 100%;
+    border: 2px solid #111;
+    border-radius: 50px 0 50px 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 50px 180px;
+    gap: 35px;
+    
+  }
+  .thankyou{
+    float: left;
+    color: #fff;
+  }
+  .thankyou div{
+    height: 3px;
+    width: 250px;
+    background: #fff;
+  }
+  .thankyou h1{
+    font-family: 'Cormorant', serif;
+    text-transform: uppercase;
+    font-size: 130px;
+    font-weight: 300;
+    line-height: 130px;
+  }
+  .thankyou h1:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    word-wrap: nowrap;
+  }
+  .ft-contact{
+    color: #fff;
+    flex-basis: 25%;
+    display: block;
+    font-family: 'poppins';
+  }
+  .ft-contact p{
+    /* color: var(--Grey-font); */
+    color: #777;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+  }
+  .ft-contact p a{
+    /* color: var(--Grey-font); */
+    color: #777;
+    font-size: 15px;
+    
+  }
+  .ft-contact p a:hover{
+    color: hsl(0 0% 100%/0.2);
+  background-clip: text;
+  background-image: linear-gradient(90deg, #f1e90c, rgb(18, 221, 190));
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  }
+  .ft-contact h1{
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .ft-cont-main{
+    margin-top: 30px;
+  }
+  .ft-cont-main i{
+    font-size: 25px;
+    margin-right: 20px;
+    color: #fff;
+  }
+  .ft-cont-main a:hover i{
+    color: hsl(0 0% 100%/0.2);
+  background-clip: text;
+  background-image: linear-gradient(90deg, #f1e90c, rgb(18, 221, 190));
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  }
+  @media screen and (max-width:1025px) {
+    .thankyou h1{
+      font-size: 80px;
+      line-height: 75px;
+    }
+  }
+  @media (max-width:800px){
+    footer{
+      flex-direction: column;
+      padding: 50px 50px;
+      height: 100vh;
+      justify-content: flex-start;
+      border-radius: 30px 0 30px 0;
+    }
+    .thankyou {
+      margin-bottom: 50px;
+    }
+    .thankyou h1{
+      font-size: 50px;
+      line-height: 40px;
+    }
+    .thankyou div{
+      width: 50px;
+      margin-right: 10px;
+    }
+    .ft-contact p{
+      line-height: 150%;
+    }
+  }
+
+  .ending-line{
+    margin: 20px 0 20px;
+    text-align: center;
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: grey;
+  }
+  .ending-line i{
+    color: rgb(244, 0, 102);
+  }
+  /* =============================== scroll bar ==================================== */
+
+  ::-webkit-scrollbar{ width: 5px; }
+  ::-webkit-scrollbar-track { box-shadow: inset 0 0 5px rgb(0,0,0);}
+  ::-webkit-scrollbar-thumb { background-image: linear-gradient(var(--GS-1stClr),var(--GS-2ndClr));
+  border-radius: 5px;}
+  /* =============================== MusicPAge ==================================== */
+
+ .music-page-container{
+  width: 100%;
+  position: relative;
+  margin-top: 100px;
+ }
+.test-box{
+  position: relative;
+  padding-top: 100px;
+  width: 80%;
+  height: 10vh;
+  margin:0 auto;
+  background-image: url(../img/Book-self.jpeg);
+  border-radius: 20px;
+}
+.test-box::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  background-image:linear-gradient(to bottom, rgb(255, 255, 255,0.2) 0%, rgb(0,0,0,0.9) 80%, #000 );
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  z-index: 1;
+}
+.musicControl{
+    position: absolute;
+    bottom: 0px;
+    z-index: 100;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    /* border: 2px solid #222; */
+    border-radius: 20px;
+}
+.musicControl i{
+    color: #fff;
+    font-size: 25px;
+    margin: 20px 25px;
+}
+.musicControl .bar{
+    position: relative;
+    height: 3px;
+    width: 85%;
+    background: linear-gradient(to right, #333, #555);
+    margin: 25px;
+    border-radius: 3px;
+    flex: 1;
+}
+.musicControl .bar .bar2{
+    position: absolute;
+    background: linear-gradient(to right, #8ff019,#18edf4);
+    width: 0%;height:100%;
+    top: 0;
+    border-radius: 3px;
+    transition: 0.3s linear;
+}
+.musicControl .bar input{
+    position: absolute;
+    width: 100%;
+    top: -7px;
+    left: -3px;
+    z-index: 9999;
+    transition: 0.3s linear;
+    cursor: pointer;
+    opacity: 0;
+}
+#currentStart, #currentEnd{
+    font-family: 'poppins',serif;
+    letter-spacing: 2px;
+}
+#currentEnd{
+  margin-right: 25px;
+}
+.music-article{
+    padding: 50px 30px 0 30px;
+    color: #fff;
+    font-family: 'poppins',serif;
+    overflow-y: hidden;
+    height: 70%;
+}
+.music-article h1{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 50px;
+}
+.music-article p{
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    color: #888;
+    font-family: var(--Hindi-font);
+    width: 90%;
+    text-indent: 40px;
+}
+
+@media (max-width:800px) {
+  
+  .musicControl i{
+    margin: 15px;
+  }
+  .musicControl .bar{
+    margin:0 10px;
+    width: 65%;
+  }
+}
+
+/* ================================ OSHO -header ===========================  */
+
+.osho-discription{
+color: #fff;
+position: absolute;
+bottom: 5%;right: 5%;
+text-align: right;
+width: 50%;
+height: 50%;
+font-family: 'poppins';
+overflow: hidden;
+}
+.osho-discription h1{
+  font-size: 100px;
+  line-height: 100%;
+}
+.osho-discription p{
+  color: #666;
+}
+@media (max-width:720px){
+  .osho-discription{
+    bottom: 10%;
+    right: 10%;
+    height: 30%;
+  }
+  .osho-discription h1{
+    font-size: 60px;
+  }
+}
