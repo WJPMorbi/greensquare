@@ -929,7 +929,7 @@ button[type=submit]{
     height:100%;
   }
   .contact_header h1{
-    font-size: 70px;
+    font-size: 50px;
   }
   .contact_box {
     padding: 0 20px;
@@ -1138,6 +1138,7 @@ button[type=submit]{
   left: 50%;
   transform: translateX(-50%);
   font-size: 15px;
+  text-align: center;
 }
 .team-1 img{
   width: 100%;
@@ -1153,7 +1154,7 @@ button[type=submit]{
     padding: 10%;
   }
   .about-me-title h1{
-    font-size: 70px;
+    font-size: 50px;
     line-height: 100%;
     margin-bottom: 20px;
   }
@@ -1183,6 +1184,9 @@ button[type=submit]{
   .area-1 .input{
     margin-bottom: 20px;
   }
+  .team-row{
+    gap: 20px;
+  }
   .team-1 div h2{
     font-size: 15px;
   }
@@ -1192,6 +1196,7 @@ button[type=submit]{
   }
   .team-1 div p{
     font-size: 12px;
+    width: 100%;
   }
 }
 /* ============================ article ============================= */
@@ -1305,6 +1310,7 @@ button[type=submit]{
   max-width: 1440px;
   margin: 0 auto;
   padding-block: 150px;
+  padding-inline: 50px;
   color: #fff;                /* Change and delete this*/
   font-family: 'poppins',sans-serif;
 }
@@ -1324,10 +1330,25 @@ button[type=submit]{
   color: #3859ff;
   font-size: 15px;
   margin-block-start: 50px;
-  
-  
 }
 .blog-writing{
   font-size: 17px;
   color: #999;
+}
+
+@media (max-width:767px){
+  .blog-cont-inner{
+    padding: 50px 20px;
+  }
+  .blog-cont-inner img{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .blog-cont-inner h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .blog-date{
+    margin: 20px 0;
+  }
 }
