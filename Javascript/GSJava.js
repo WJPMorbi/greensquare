@@ -36,11 +36,4 @@ document.addEventListener("DOMContentLoaded", function(event){
    AnimeListItem(); 
 });
 
-// ------------------------- Change bg position -------------------------
 
-window.onload = function() {
-  let osho_2 = document.querySelector('.sub-header-osho');
-  
-  osho_2.style.backgroundPosition = "50% 50%";
-  osho_2.style.opacity = "1";
-};
