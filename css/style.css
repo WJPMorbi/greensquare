@@ -304,6 +304,13 @@ nav .logo img{
     }
 }
 
+@media (max-width:360px){
+  .PortNav{
+    left: -280px;
+    width: 280px;
+  }
+}
+
 /* ------------------------- Welcome ------------------------- */
 .welcome{
     width: 100%;
@@ -359,9 +366,9 @@ animation-timeline: view() ;
   .welcome{
     height: 100vh;
   }
-    .welcome_msg{
+    /* .welcome_msg{
         top: 50%;
-    }
+    } */
     .welcome_msg h1{
         font-size: 70px;
     }
@@ -371,6 +378,18 @@ animation-timeline: view() ;
     .welcome_msg p span{
       animation-range-start: cover 21vh;
       animation-range-end: contain 10vh;
+  }
+}
+@media (max-width:360px){
+  .welcome_msg{
+    top: 50%;
+  }
+  .welcome_msg h1{
+    font-size: 50px;
+    line-height: 150%;
+  }
+  .welcome_msg p{
+    font-size: 12px;
   }
 }
 
@@ -657,6 +676,11 @@ animation-timeline: view() ;
     }
     .ft-contact p{
       line-height: 150%;
+    }
+  }
+  @media (max-width:360px){
+    footer{
+      padding: 30px;
     }
   }
 
