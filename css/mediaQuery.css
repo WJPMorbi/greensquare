@@ -36,10 +36,10 @@
           left: -320px;
           width: 320px;
           height: 100vh;
-          background: rgb(0, 0, 0,0.5);
+          background: rgb(0, 0, 0,0.3);
           text-align: left;
           backdrop-filter: blur(10px);
-          transition: 0.5s ease;
+          transition:All 0.5s ease;
           border-radius: 10px;
           padding-top: 5px;
           z-index: 999999;
@@ -90,6 +90,7 @@
       }
       #nav_check:checked ~ #navLinks .PortNav {
           left: 0px;
+          z-index: 9999999;
       }
       #nav_check:checked ~ .MenuBtn .line-1{
           transform: rotate(45deg) translateY(4px);
@@ -387,6 +388,9 @@
 
   /* ====================================== blog page =====================  */
   @media (max-width:767px){
+    .blog-cont-inner{
+      z-index: 1;
+    }
     .blog-cont-inner{
       padding: 50px 20px;
     }

@@ -11,7 +11,7 @@ masterPlay.addEventListener('click',()=>{
         masterPlay.classList.remove('ri-pause-circle-fill');
         masterPlay.classList.add('ri-play-circle-fill');
     }
-})
+});
 
 let currentStart = document.getElementById('currentStart');
 let currentEnd = document.getElementById('currentEnd');

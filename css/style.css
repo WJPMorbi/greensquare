@@ -57,6 +57,7 @@ header {
     background-position: center;
     background-size: cover;
     position: relative;
+    z-index: 10000000;
 }
  .sub-header{
     width: 100%;
@@ -64,6 +65,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;  
+    z-index: 10000000;
 } 
 
 .sub-header-osho{
@@ -75,31 +77,33 @@ header {
 .sub-header-contact{
   background-image:linear-gradient(to right, rgb(0 0 0 / 0.8), rgb(0 0 0/0.8)), url(../img/printer.jpg);
   background-position: 100% 40%;
-  opacity: 0;
-  animation: headerAnim 1.5s ease forwards;
+  opacity: 1;
+  /* animation: headerAnim 1.5s ease forwards; */
   height: 50vh;
 }
 .sub-header-blog{
-  background-image: url(../img/blog.jpg);
-  background-position: 100% 40%;
-  opacity: 0;
-  animation: headerAnim 1.5s ease forwards;
-  height: 50vh;
+    background-image: linear-gradient( to bottom,rgb(0 0 0/1),rgb(0 0 0 / 0.2)),url(../img/blog.jpg); 
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    position: relative;
 }
 .sub-header-blog::after{
   content: '';
   display: block;
-  position: absolute;top: 0;left: 0;
-  width: 100%;height: 101%;
-  background-image: linear-gradient(rgba(0, 0, 0, 1),rgb(0 0 0/0.5));
-  z-index: -1;
+  position: absolute;
+  top: 0;left: 0;
+  width: 100%;height: 100%;
+  backdrop-filter: blur(5px);
 }
 .sub-header-prdp{
   background-image:linear-gradient(to bottom, rgb(0 0 0 / 0.2), rgb(0 0 0/0)),linear-gradient(to right, rgb(0 0 0 / 0), rgb(0 0 0/0)), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1015%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(2%2c 41%2c 21%2c 1)'%3e%3c/rect%3e%3cpath d='M731.505%2c286.027C755.055%2c284.926%2c773.669%2c267.844%2c784.736%2c247.027C795.069%2c227.59%2c794.878%2c205.081%2c784.993%2c185.413C773.851%2c163.244%2c756.309%2c141.735%2c731.505%2c141.116C705.939%2c140.478%2c685.721%2c160.332%2c673.184%2c182.622C660.933%2c204.405%2c656.613%2c230.676%2c668.891%2c252.444C681.361%2c274.554%2c706.149%2c287.213%2c731.505%2c286.027' fill='rgba(22%2c 89%2c 34%2c 0.63)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M598.823%2c474.698C616.933%2c474.777%2c634.15%2c466.148%2c643.409%2c450.584C652.875%2c434.671%2c652.709%2c415.098%2c643.992%2c398.763C634.707%2c381.364%2c618.542%2c366.755%2c598.823%2c367.033C579.461%2c367.306%2c564.851%2c382.885%2c555.809%2c400.008C547.435%2c415.867%2c545.956%2c434.656%2c554.906%2c450.197C563.872%2c465.766%2c580.857%2c474.619%2c598.823%2c474.698' fill='rgba(22%2c 89%2c 34%2c 0.63)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M984.4532054228202 435.36149158229875L846.2934279978432 435.36149158229875 846.2934279978432 573.5212690072758 984.4532054228202 573.5212690072758z' fill='rgba(22%2c 89%2c 34%2c 0.63)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M989.403%2c312.964C1023.529%2c314.735%2c1054.649%2c294.144%2c1071.98%2c264.693C1089.572%2c234.798%2c1094.005%2c196.608%2c1074.915%2c167.647C1057.209%2c140.785%2c1021.564%2c138.582%2c989.403%2c139.415C959.172%2c140.198%2c926.548%2c145.81%2c911.234%2c171.887C895.776%2c198.209%2c905.656%2c230.128%2c920.45%2c256.828C935.846%2c284.614%2c957.68%2c311.317%2c989.403%2c312.964' fill='rgba(22%2c 89%2c 34%2c 0.63)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M792.7847190467987 373.0894772707671L891.9306446255966 392.361492934519 911.2026602893485 293.21556735572113 812.0567347105506 273.9435516919692z' fill='rgba(22%2c 89%2c 34%2c 0.63)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M88.34780336317296 82.0122266140196L127.04377983589171 173.1742343351341 218.2057875570062 134.47825786241532 179.50981108428743 43.31625014130085z' fill='rgba(22%2c 89%2c 34%2c 0.63)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1015'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
   background-position: 0% 0%;
-  opacity: 0;
+  opacity: 1;
   height: 50vh;
-  animation: headerAnim 1s forwards;
+  /* animation: headerAnim 1s forwards; */
 }
 
 @keyframes headerAnim {
@@ -159,7 +163,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
+    z-index: 1000000;
 }
 nav .logo{
   display: flex;
@@ -730,6 +734,7 @@ button[type=submit]{
   top: 50%;left: 50%;
   transform: translate(-50%,-50%);
   width: 100%;
+  z-index: 100;
 }
 .about-me-title h1{
   font-family: 'poppins',sans-serif;
@@ -1032,6 +1037,8 @@ button[type=submit]{
   padding-inline: 50px;
   color: #fff;                /* Change and delete this*/
   font-family: 'poppins',sans-serif;
+  z-index: 1;
+  position: relative;
 }
 .blog-cont-inner img{
   width: 50%;
