@@ -15,9 +15,11 @@
 /* ------------------------- POrt NAv Starts --------------------------------    */
 
 @media (max-width:800px){
+    nav{
+      padding: 5%;
+    }
     nav .logo img{
       width: 25px;
-  
     }
       .MenuBtn{
           display: block;
@@ -89,10 +91,26 @@
       #nav_check:checked ~ #navLinks .PortNav {
           left: 0px;
       }
-      #nav_check:checked ~ .MenuBtn{
-          transform: rotate(-90deg);
+      #nav_check:checked ~ .MenuBtn .line-1{
+          transform: rotate(45deg) translateY(4px);
           cursor: pointer;
       }
+      #nav_check:checked ~ .MenuBtn .line-2{
+        transform: rotate(-45deg) translateY(-4px);
+        cursor: pointer;
+      }
+    #nav_check:checked ~ .MenuBtn .line-3{
+        transform: translateY(-10px);
+        opacity: 0;
+        cursor: pointer;
+      }
+      .line-1, .line-2, .line-3{
+        width: 20px;height: 3px;
+        background: #fff;
+        margin-bottom: 3px;
+        transition: all 0.5s ease;
+      }
+
   }
   
   @media (max-width:360px){

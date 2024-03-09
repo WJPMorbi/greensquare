@@ -57,6 +57,19 @@ nav_insta_link.setAttribute("href","https://www.instagram.com/santhaliya_pradeep
 nav_fb_link.setAttribute("href","https://www.facebook.com/santhaliyapradeep?mibextid=ZbWKwL");
 nav_yt_link.setAttribute("href","https://youtube.com/@PradeepWorld");
 
+// ------------------------- POrtNav function -------------------------
+
+let checkboxbtn = document.querySelector('#checkbox-tick');
+checkboxbtn.addEventListener("change", (checkbox)=>{
+    let portNav = document.querySelector(".PortNav");
+    if(this.checked){
+        portNav.style.left = "0";
+    }
+    else{
+        portNav.style.left = "-280px";
+    }
+});
+
 
 
 
