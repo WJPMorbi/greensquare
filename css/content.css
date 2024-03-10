@@ -136,3 +136,54 @@
       height: 150px;
     }
   }
+
+    /* ============================= volume =====================  */
+
+.vol-btn{
+  display: flex;
+  align-items: center;
+  padding: 15px 30px; 
+  opacity: 0;
+  width: 60%;
+}
+.vol-btn:hover{
+  opacity: 1;
+}
+.icon-btn{
+  width: 30px;height: 30px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;justify-content: center;
+}
+.vol{
+  position: relative;
+  margin-left: 20px;
+  height: 5px;
+}
+#vol{
+  z-index: 999999;
+  width: 100%;
+  opacity: 0;
+  outline: none;
+  position: relative;
+  top: -7px;
+}
+
+.vol_bar, .vol_bar2 {
+  height: 6px;
+  border-radius: 3px;
+  position: absolute;top: 0px;left: 0;
+  z-index: -1;
+}
+.vol_bar{
+  width: 50%;
+  background-image: linear-gradient(to right, #fff, rgb(5, 234, 135));
+  border-right: 2px solid white;
+}
+.vol_bar2{
+  width: 100%;
+  background: #222;
+  z-index: -2;
+  
+}

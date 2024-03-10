@@ -45,7 +45,7 @@ music.addEventListener('timeupdate',()=>{
 
 seek.addEventListener('change',()=>{
     music.currentTime = seek.value * music.duration / 100;
-})
+});
 
 music.addEventListener('ended',()=>{
     masterPlay.classList.remove('ri-pause-circle-fill');
@@ -53,4 +53,14 @@ music.addEventListener('ended',()=>{
     bar2.style.width = `${0}%`;
     seek.value = 0;
     currentStart.innerText = '0:00';
-})
+});
+
+let vol_icon = document.getElementById('vol_icon');
+let vol = document.getElementById('vol');
+let vol_bar = document.getElementsByClassName('vol_bar')[0];
+
+vol.addEventListener("change",()=>{
+    let vol_a = vol.value;
+    vol_bar.style.width = `${vol_a}%`;
+    music.volume = vol_a/100;
+});
