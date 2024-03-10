@@ -120,7 +120,7 @@
       font-size: 20px;
     }
     .post_info p{
-      font-size: 10px;
+      font-size: 12px;
       margin-top: 3px;
     }
     .blog-btn{
@@ -128,12 +128,12 @@
       bottom: 15px;left: 15px;
     }
     .card{
-      height: 150px;
+      height: 200px;
       justify-self: start;
     }
     .card2{
       width: 320px;
-      height: 150px;
+      height: 200px;
     }
   }
 
@@ -145,6 +145,11 @@
   padding: 15px 30px; 
   opacity: 0;
   width: 60%;
+}
+@media (max-width:767px) {
+    .vol-btn{
+      width: 100%;
+    }
 }
 .vol-btn:hover{
   opacity: 1;

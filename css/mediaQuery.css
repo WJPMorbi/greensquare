@@ -384,6 +384,11 @@
    .article-container .article-subtitle{
       font-size: 15px;
     }
+    .article-writing .img-1{
+      margin: 0;
+      margin-block:20px ;
+      width: 100%;
+    }
   }
 
   /* ====================================== blog page =====================  */

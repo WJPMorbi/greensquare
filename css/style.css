@@ -504,7 +504,7 @@ animation-timeline: view() ;
   /* =============================== MusicPAge ==================================== */
   
   .sub-header-music {
-    background-image: linear-gradient( to bottom,rgb(0 0 0/0.5),rgb(0 0 0 / 1)),url(https://source.unsplash.com/woman-in-white-and-black-stripe-long-sleeve-shirt-sitting-on-chair-wkgv7I2VTzM); 
+    background-image: linear-gradient( to bottom,rgb(0 0 0/0.5),rgb(0 0 0 / 1)),url(../img/sub-header-music.jpg); 
     background-position: 50% 50%;
     background-size: cover;
     width: 100%;
@@ -994,6 +994,13 @@ button[type=submit]{
   color: #a9a9a9;
   letter-spacing: 0.5px;
   text-indent: 50px;
+}
+
+.article-writing .img-1{
+  width: 80%;
+  height: 320px;
+  margin-top: 20px;
+  object-position: 100% 50%;
 }
 
 .download-btn{
