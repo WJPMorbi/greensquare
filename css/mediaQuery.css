@@ -418,6 +418,7 @@
   @media (max-width:600px){
     .sidebar-right{
       padding: 150px 30px 50px;
+      width:100%;
     }
     .main-container-bodybuilding{
       flex-direction: column-reverse;
