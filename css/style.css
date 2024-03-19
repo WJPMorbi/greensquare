@@ -1091,16 +1091,18 @@ button[type=submit]{
   padding-bottom: 150px;
 }
 .sidebar-left{
-  flex: 1;
+  width: 65%;
+  margin: auto;
 }
 .sidebar-right{
-  width: 500px;
-  /* border-left: 2px solid #222; */
+  flex-basis:25% ;
+  border-left: 2px solid #222;
   padding: 150px 30px 0;
 }
 
 .sec-container{
   max-width: 1350px;
+  flex: 1;
   margin: auto;
   /* border: 2px solid red; */
   padding:0 20px ;
@@ -1211,6 +1213,7 @@ button[type=submit]{
   background-image: linear-gradient(to right,#333431,#0f110f);
   padding: 15px;
   border-radius: 5px;
+  width: 100%;
 }
 .sidebar-right-content img{
   height: 100px;
