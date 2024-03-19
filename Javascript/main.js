@@ -64,3 +64,5 @@ vol.addEventListener("change",()=>{
     vol_bar.style.width = `${vol_a}%`;
     music.volume = vol_a/100;
 });
+
+

@@ -86,6 +86,13 @@ header {
   animation: bgAnim 2s ease forwards;
   height: 50vh;
 }
+.sub-header-fitness{
+  background-image:linear-gradient(to right, rgb(0 0 0 / 0.8), rgb(0 0 0/0.8)), url(../img/fitness.jpg);
+  background-position: 100% 50%;
+  opacity: 1;
+  animation: headerAnim2 2s ease forwards;
+  height: 50vh;
+}
 .sub-header-blog{
     background-image: linear-gradient( to bottom,rgb(0 0 0/1),rgb(0 0 0 / 0.2)),url(../img/blog.jpg); 
     background-position: 100% 100%;
@@ -114,6 +121,12 @@ header {
 @keyframes headerAnim {
   to{
     background-position: 50% 50%;
+    opacity: 1;
+  }
+}
+@keyframes headerAnim2 {
+  to{
+    background-position: 50% 0%;
     opacity: 1;
   }
 }
@@ -638,6 +651,7 @@ z-index: 1000;
   position: absolute;
   top: 50%;left: 50%;
   transform: translate(-50%,-50%);
+  line-height: 100%;
 }
 .contact_box{
   width: 100%;
@@ -1069,4 +1083,163 @@ button[type=submit]{
   font-size: 17px;
   color: #999;
 }
+
+/* ========================= Body Building page ========================  */
+.main-container-bodybuilding{
+  display: flex;
+  flex-direction: row-reverse;
+  padding-bottom: 150px;
+}
+.sidebar-left{
+  flex: 1;
+}
+.sidebar-right{
+  width: 500px;
+  /* border-left: 2px solid #222; */
+  padding: 150px 30px 0;
+}
+
+.sec-container{
+  max-width: 1350px;
+  margin: auto;
+  /* border: 2px solid red; */
+  padding:0 20px ;
+}
+.sec3{
+  padding: 150px 0 0;
+  /* border: 2px solid blue; */
+  position: relative;
+}
+
+.sec3-inner h2{
+  color: #fff;
+  font-size: 35px;
+  line-height: 100%;
+  margin-bottom: 20px;
+  font-family: 'poppins',sans-serif;
+}
+.sec3-inner p{
+  color: #888;
+  width: 80%;
+  font-family:'poppins', sans-serif;
+  letter-spacing: 1px;
+}
+.sec3-slider{
+  margin-top: 90px;
+}
+.slick-slider .slick-arrow{
+  position: absolute;
+  top: -100px;
+}
+.slick-slider .slick-prev{
+  left: inherit;
+  right: 170px;
+}
+.slick-slider .slick-next{
+  right: 90px;
+}
+.slick-slider .slick-prev::before,
+.slick-slider .slick-next::before {
+  content: '';
+  position: absolute;
+  top: 0;left: 0;
+  background: #fff url(../img/arrow.svg) no-repeat;
+  background-size: 24px;
+  width: 60px; height: 60px;       
+  opacity: 1;
+  background-position: center;
+  border-radius: 50%;
+}
+.slick-prev::before{
+  transform: rotatez(180deg);
+}
+
+.slick-slider .secitem{
+  width: 280px;
+  height: 450px;
+  position: relative;
+  margin-left: 20px;
+}
+.slick-slider .secitem-inner{
+  width: 90%;
+  height: 85%;
+  overflow: hidden;
+}
+.slick-slider .secitem video{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.slick-slider .secitem img{
+  width: 95%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.v-title{
+  position: absolute;
+  bottom: 0px;
+  width: 90%; height: 60px;
+  background-image: linear-gradient(to right, #452611, #333);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  padding-left: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.sidebar-right h1{
+  background: #fff;
+  text-align: center;
+  font-family: 'poppins',sans-serif;
+  font-size: 20px;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+.sidebar-right-content{
+  display: flex;
+  margin: 20px 0;
+  background-image: linear-gradient(to right,#333431,#0f110f);
+  padding: 15px;
+  border-radius: 5px;
+}
+.sidebar-right-content img{
+  height: 100px;
+  width: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+.sbr-inner {
+  font-family: "poppins",sans-serif;
+  line-height: 120%;
+}
+.sbr-inner h2{
+  font-size: 15px;
+  color: #fff;
+  font-weight: normal;
+}
+.sbr-inner p{
+  color: #666;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.read-more-btn{
+  color: #222;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
 
