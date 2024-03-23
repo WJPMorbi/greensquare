@@ -63,13 +63,16 @@ let checkboxbtn = document.querySelector('#checkbox-tick');
 checkboxbtn.addEventListener("change", (checkbox)=>{
     let portNav = document.querySelector(".PortNav");
     if(this.checked){
-        portNav.style.left = "0";
+        portNav.style.left = "-5px";
         portNav.style.zIndex = "999999";
     }
     else{
-        portNav.style.left = "-280px";
+        portNav.style.left = "-105%";
     }
 });
+
+// =====================================================================
+
 
 
 

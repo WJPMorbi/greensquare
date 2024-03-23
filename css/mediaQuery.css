@@ -16,7 +16,10 @@
 
 @media (max-width:800px){
     nav{
-      padding: 5%;
+      padding: 10% 5%;
+      background: transparent;
+      height: 50px;
+      
     }
     nav .logo img{
       width: 25px;
@@ -24,6 +27,7 @@
       .MenuBtn{
           display: block;
           transition: 0.6s;
+          cursor: pointer;
       }
       .LandNav{
           display: none;
@@ -33,10 +37,10 @@
           flex-direction: column;
           position: absolute;
           top: 0px;
-          left: -320px;
-          width: 320px;
+          left: -100%;
+          width: 100%;
           height: 100vh;
-          background: rgb(0, 0, 0,0.3);
+          background: rgb(0, 0, 0,1);
           text-align: left;
           backdrop-filter: blur(10px);
           transition:All 0.5s cubic-bezier(0.86,0,0.07,1);
@@ -47,26 +51,34 @@
       }
       .PortNav .logo{
         padding: 5%;
-        background-image: linear-gradient(#000 60%,transparent);
+       
       }
       #navLinks .PortNav li{
-          margin: 5px 10px;
-          padding: 10px 15px;
+          margin: 10px 20px;
+          padding: 20px 15px;
           border-radius: 5px;
           transition: 0.6s;
           cursor: pointer;
+          background-image: linear-gradient(90deg, #f1e90c, rgb(18, 221, 190));
       }
+     
       #navLinks .PortNav li a{
-        padding: 10px 70% 10px 0 ;
+        padding: 10px 50% 10px 0 ;
+        font-size: 30px;
+        line-height: 1;
+        color: #000;
+        font-weight: 600;
+        /* background: red; */
       }
       .PortNav .nav-con-icon {
         position: absolute;
         bottom: 100px;
-        left: 100px;
+        left: 50%;
+        transform: translateX(-50%);
       }
       .PortNav .nav-con-icon a{
         color: #fff;
-        font-size: 25px;
+        font-size: 35px;
         margin:0 10px;
       }
       .PortNav .nav-con-icon a:hover{
@@ -80,10 +92,10 @@
           display: none;
       }
       #navLinks .PortNav li:hover{
-          background-image: linear-gradient(to right, var(--GS-1stClr), var(--GS-2ndClr));
+          background-image: linear-gradient(to right,rgb(18, 221, 190), var(--GS-2ndClr));
       }
       #navLinks .PortNav li:hover a{
-          color: #222;
+          color: #031b0e;
           font-weight: 600;
       }
       #nav_check{
@@ -394,15 +406,22 @@
 
   /* ====================================== blog page =====================  */
   @media (max-width:767px){
+    .sub-header-blog{
+      height: 10%;
+      background: #000;
+    }
+    .blog-header-title h1{
+      display: none;
+    }
     .blog-cont-inner{
       z-index: 1;
     }
     .blog-cont-inner{
-      padding: 50px 20px;
+      padding: 0px 20px 50px;
     }
     .blog-cont-inner img{
       width: 100%;
-      margin-bottom: 20px;
+      margin: 20px 0;
     }
     .blog-cont-inner h1{
       font-size: 30px;
@@ -462,7 +481,8 @@
     margin-top: 50px;
   }
   .sidebar-right-content img{
-    width: 90px;
+    width: 100px;
+    height: 70px;
   }
 }
 
@@ -497,6 +517,7 @@
   .sidebar-right-content img{
     width: 50px;
     height: 50px;
+    object-fit: cover;
   }
   .sbr-inner h2{
     font-size: 10px;
@@ -544,6 +565,7 @@
     height: auto;
     gap: 10px;
     position: relative;
+    height: 70px;
   }
   .sidebar-right-content img{
     width: 100%;
@@ -592,6 +614,7 @@
     flex-direction: row;
     padding: 15px;
     gap: 0;
+    height: 90px;
   }
   .sidebar-right-content img{
     position: relative;
