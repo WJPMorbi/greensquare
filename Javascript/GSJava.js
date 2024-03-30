@@ -20,6 +20,9 @@
 //   });
 // });
 
+let foot_content_p = document.querySelector('.ft-contact p');
+foot_content_p.innerHTML = '<p>"Welcome to our website! Here, you will find a wealth of resources to inspire and motivate you. From curated book and movie recommendations to insightful fitness tips and skill-building content, we are here to help you thrive. Join our community and embark on a journey of growth and discovery!"</p>';
+
 // ------------------------- Toggle Function -------------------------
 function AnimeListItem(){
     const NavItem  = document.querySelectorAll('.LandNav li');
@@ -57,21 +60,7 @@ nav_insta_link.setAttribute("href","https://www.instagram.com/santhaliya_pradeep
 nav_fb_link.setAttribute("href","https://www.facebook.com/santhaliyapradeep?mibextid=ZbWKwL");
 nav_yt_link.setAttribute("href","https://youtube.com/@PradeepWorld");
 
-// ------------------------- POrtNav function -------------------------
 
-let checkboxbtn = document.querySelector('#checkbox-tick');
-checkboxbtn.addEventListener("change", (checkbox)=>{
-    let portNav = document.querySelector(".PortNav");
-    if(this.checked){
-        portNav.style.left = "-5px";
-        portNav.style.zIndex = "999999";
-    }
-    else{
-        portNav.style.left = "-105%";
-    }
-});
-
-// =====================================================================
 
 
 
