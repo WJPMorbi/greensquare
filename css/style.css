@@ -118,6 +118,13 @@ header {
   height: 50vh;
 }
 
+.sub-header-movie{
+  background-image: linear-gradient(to bottom, rgb(0 0 0 / 1), rgb(0 0 0/0.5)), url(../img/movies_header.webp);
+  background-position: 0% 0%;
+  opacity: 1;
+  height: 50vh;
+}
+
 @keyframes headerAnim {
   to{
     background-position: 50% 50%;

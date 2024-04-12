@@ -68,7 +68,7 @@
         line-height: 1;
         color: #000;
         font-weight: 600;
-        /* background: red; */
+        text-shadow: none;
       }
       .PortNav .nav-con-icon {
         position: absolute;
@@ -637,4 +637,105 @@
   .fitness-header h1{
     font-size: 40px;
   }
+}
+
+/* ================================== movie cont ===================================  */
+
+@media (max-width:800px){
+  .movie_container{
+    padding-block: 30px ;
+  }
+  .search_bar input{
+    width: 100%;
+  }
+}
+@media (max-width:520px){
+  #movie_list{
+    gap: 15px;
+    padding: 10px;
+  }
+  .movie_card{
+    width: 155px;
+  }
+  .movie_card img{
+    height: 250px;
+  }
+}
+
+@media (max-width:676px){
+  .mov_item{
+    width: 100px;
+    height: 150px;
+    bottom: 230px;
+    border-radius:10px;
+    transition: 0s;
+   } 
+  .mov_item:nth-child(3){
+  left: 30%;
+  transform: translate(-50%,90%);
+}
+.mov_item:nth-child(4){
+  left: calc(30% + 118px);
+  transform: translate(-50%,90%);
+}
+.mov_item:nth-child(5){
+  left: calc(30% + 236px);
+  transform: translate(-50%,90%);
+}
+.mov_item:nth-child(n+6){
+  left: calc(30% + 354px);
+  transform: translate(-50%,90%);
+  opacity: 0;
+}
+  .buttons{
+    left: 50%;
+    transform: translate(-50%,0);
+    bottom: 30px;
+  }
+  .mov_item .content{
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  text-align: left;
+  width: 300px;
+  color: #fff;
+  transform:translate(50%,50%);
+  display: none;
+  padding: 20px ;
+  text-shadow: 0 5px 5px rgb(0,0,0,0.2);
+  animation: showcontent1 1s ease-in-out 1 forwards;
+  border-radius:15px;
+}
+.mov_item .content .details{
+  /* background-image: linear-gradient(to top,#111, transparent); */
+  backdrop-filter: blur(15px);
+}
+.details h1{
+  font-size: 50px;
+}
+}
+@media (max-width:450px){
+  .mov_item:nth-child(3){
+  left: 22%;
+  transform: translate(-50%,90%);
+}
+.mov_item:nth-child(4){
+  left: calc(22% + 118px);
+  transform: translate(-50%,90%);
+}
+.mov_item:nth-child(5){
+  left: calc(22% + 236px);
+  transform: translate(-50%,90%);
+}
+.mov_item:nth-child(n+6){
+  left: calc(22% + 354px);
+  transform: translate(-50%,90%);
+  opacity: 0;
+}
+.mov_item .content{
+  left: 5%;
+}
+.mov_item .content .details{
+  width: 120%;
+}
 }
