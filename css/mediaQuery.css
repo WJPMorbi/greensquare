@@ -668,7 +668,7 @@
     height: 150px;
     bottom: 230px;
     border-radius:10px;
-    transition: 0s;
+    transition: 0.5s;
    } 
   .mov_item:nth-child(3){
   left: 30%;
