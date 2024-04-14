@@ -205,8 +205,17 @@
   width: 100%;
   position: relative;
   background: #000;
-  padding-block: 100px;
+  padding-block: 80px;
   font-family: 'poppins',sans-serif;
+}
+.movie_container h1{
+  font-size: 50px ;
+  line-height: 1;
+  color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: normal;
+  text-align: center;
 }
 .movie_cont{
   max-width: 1290px;
@@ -272,6 +281,7 @@
   margin: 10px 0;
 }
 /* ================================= movie-header ===========================  */
+
 
 .movie-slider-container{
   width: 100%;
@@ -500,7 +510,7 @@
   position: absolute;
   background:#fff;
   width: 100%;height: 100%;
-  top: 0;left: 0;
+  top: 0px;left: 0;
   border-radius:19px;
   clip-path:circle(25% at -20% 50%);
   transition:0.6s;
@@ -524,3 +534,21 @@
 .movie-btn:hover .movie-btn-bg{
   clip-path:circle(80%);
 }
+
+/* =========================== Movie Details page ======================= */
+
+.movie-1{
+  background-image: url("https://m.media-amazon.com/images/M/MV5BMjM2MzIwNDYyMV5BMl5BanBnXkFtZTgwMTEzMjMyNDM@._V1_FMjpg_UX2048_.jpg");
+  position: absolute;
+  top: 0;left: 0;
+  width: 100%;height: 100vh;
+ }
+ .movie-1::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;left: 0;
+  width: 100%;height: 100%;
+  background-image: linear-gradient(to bottom, #000,transparent);
+  z-index: 1000;
+ }

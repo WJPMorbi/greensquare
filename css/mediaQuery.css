@@ -645,6 +645,9 @@
   .movie_container{
     padding-block: 30px ;
   }
+  .movie_cont .search_bar{
+    padding: 20px;
+  }
   .search_bar input{
     width: 100%;
   }
@@ -663,6 +666,11 @@
 }
 
 @media (max-width:676px){
+  .movie_container h1{
+    font-size: 30px;
+    padding: 0 20px;
+    width: 80%;
+  }
   .mov_item{
     width: 100px;
     height: 150px;
@@ -742,5 +750,16 @@
 .mov_item .content .details .info{
   font-size: 12px;
 }
+}
+@media (max-width:365px){
+  .movie_cont .search_bar input{
+    width: 100%;
+  }
+  .movie_container{
+    padding-top: 0px;
+  }
+  .movie_container h1{
+    font-size: 20px;
+  }
 }
 
