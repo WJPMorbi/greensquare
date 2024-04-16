@@ -763,3 +763,43 @@
   }
 }
 
+/* ================================================ movie details Page ================  */
+
+@media (max-width:450px){
+  .movie-1-header{
+    flex-direction: column;
+    height: 70vh;
+    justify-content: flex-end;
+    /* align-items: center; */
+    width: 80%;
+  }
+  .movieProps{
+    font-size: 70px;
+  }
+  .m1h-left{
+    flex-basis: 20%;
+  }
+  .m1h-right{
+    justify-content:center;
+    align-items: flex-start;
+  }
+  .m1h-right h6{
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 50px;
+  }
+  .m1h-right div:nth-child(2) i{
+    font-size: 50px;
+  }
+  .movieDetailsInfo{
+    flex-direction: column;
+    padding: 30px;
+  }
+  .movieDetailRight{
+    margin-top: 50px;
+  }
+  .storyLine{
+    width: 100%;
+    margin-left: 0%;
+  }
+}

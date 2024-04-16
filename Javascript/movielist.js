@@ -4,7 +4,7 @@ const movie_items = [
       imgsrc : "https://m.media-amazon.com/images/M/MV5BYjQ5NjM0Y2YtNjZkNC00ZDhkLWJjMWItN2QyNzFkMDE3ZjAxXkEyXkFqcGdeQXVyODIxMzk5NjA@._V1_FMjpg_UY2835_.jpg",
       name: "coco",
       description: "196 min <span>|</span> Animation.",
-      url:'https://chat.openai.com/'
+      url:'movie-1.html'
     },
     { 
       srNumber:2,
@@ -95,6 +95,12 @@ const movie_items = [
       imgsrc : "https://m.media-amazon.com/images/M/MV5BMmQwMzdiOGMtNGZiYS00YjgyLWJlMjItYzQ3Nzc2OGIwYjQwXkEyXkFqcGdeQXVyMzQ1MTM3NjY@._V1_QL75_UX380_CR0,0,380,562_.jpg",
       name: "Captain Underpants",
       description: "89 Min <span>|</span> Animation, Comedy"
+    },
+    {
+      srNumber:17,
+      imgsrc : "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      name: "Avengers: Endgame",
+      description: "181 Min <span>|</span> Sci-fi, Action"
     }
     
     ];
