@@ -107,7 +107,7 @@
                 <div class="info">
                   <p>A simple act of kindness always sparks another, even in a frozen, faraway place. When Smeerensburg's new postman, Jesper, befriends toymaker Klaus, their gifts melt an age-old feud and deliver a sleigh full of holiday traditions.</p>
                 </div>
-                <div class="movie-btn"><a href=""><span>view more</span><i class="ri-arrow-right-double-line"></i></a><div class="movie-btn-bg"></div></div>
+                <div class="movie-btn"><a href="movieList/movie-2.html"><span>view more</span><i class="ri-arrow-right-double-line"></i></a><div class="movie-btn-bg"></div></div>
               </div> <!-- content end-->
             </div>
           </div>
@@ -157,7 +157,7 @@
                 <div class="info">
                   <p>"Luca" is a heartwarming animated film that follows the adventures of Luca Paguro, a young sea monster who explores the Italian Riviera with his newfound friend Alberto. Set in a charming coastal town, it celebrates friendship, self-discovery, and overcoming prejudices in a visually stunning and emotionally resonant story for all ages.</p>
                 </div>
-                <div class="movie-btn"><a href=""><span>view more</span><i class="ri-arrow-right-double-line"></i></a><div class="movie-btn-bg"></div></div>
+                <div class="movie-btn"><a href="movieList/movie-6.html"><span>view more</span><i class="ri-arrow-right-double-line"></i></a><div class="movie-btn-bg"></div></div>
               </div> <!-- content end-->
             </div>
           </div>
@@ -331,7 +331,6 @@ let movie_card = document.querySelectorAll('.movie_card');
 movie_card.forEach(item => {
 item.addEventListener('click',()=>{
   const url = item.getAttribute('data-url');
-  console.log(url)
    window.open(url, '_blank');
 })
 });

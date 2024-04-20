@@ -536,9 +536,15 @@
 }
 
 /* =========================== Movie Details page ======================= */
-
-.movie-1{
-  background-image: url("https://m.media-amazon.com/images/M/MV5BMjM2MzIwNDYyMV5BMl5BanBnXkFtZTgwMTEzMjMyNDM@._V1_FMjpg_UX2048_.jpg");
+.subHeader{
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;  
+  z-index: 10000000;
+} 
+.movieBanner1{
   position: absolute;
   background-size: cover;
   background-position: center;
@@ -550,7 +556,7 @@
   justify-content: center;
   font-family: 'poppins', sans-serif;
  }
- .movie-1::before{
+ .movieBanner1::before{
   content: "";
   display: block;
   position: absolute;
@@ -571,14 +577,13 @@
  .movie-dir-time {
   display: flex;
   justify-content: flex-start;
-  color: #aaaaaa;
+  color: #fff;
   gap: 30px;
   position: relative;
   font-size: 18px;
   }
   .m1h-left{
     flex-basis: 50%;
-    /* border: 2px solid rgb(145, 27, 27); */
   }
   .movieProps{
     font-size: 6vw;
@@ -689,4 +694,59 @@
   .story_video iframe{
     width: 100%;
     aspect-ratio: 19/10;
+  }
+  .cast-list{
+    margin-top: 30px;
+    transition: 0.5s ease;
+  }
+  .cast-list h5{
+    padding: 0;
+    padding: 10px 0 20px;
+    margin-bottom: 0;
+  }
+  
+  .cast-list h5 i{
+    display: none;
+  }
+  .cast-list ul li{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 10px;
+    color: #777;
+    font-weight: 600;
+    border-bottom: 0;
+  }
+  .cast-list ul li img{
+    width: 25px; height: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  .cast-list ul li p{
+    text-transform: none;
+  }
+  .height-auto{
+    height: auto;
+  }
+  #movieNameAgain{
+    color: #fff;
+    margin-top: 100px;
+  }
+  #movieShareIcon {
+    /* border: 2px solid red; */
+    margin-top: 50px;
+  }
+  #movieShareIcon h5{
+    /* border: 1px solid orange; */
+    margin-bottom: 20px;
+    color: #666;
+  }
+  #movieShareIcon div i{
+    font-size: 20px;
+    color:  #666;
+  }
+  #movieShareIcon div a{
+    /* border: 2px solid red; */
+    margin-right: 20px;
   }

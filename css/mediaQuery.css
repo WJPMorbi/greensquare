@@ -766,15 +766,29 @@
 /* ================================================ movie details Page ================  */
 
 @media (max-width:450px){
+  .subHeader{
+    background-image: linear-gradient(red, yellow);
+  }
+  .movieBanner1{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 100% 20%;
+  }
+  .movieBanner1::before{
+    background-image: linear-gradient(to bottom, rgb(0 0 0/0.2),transparent);
+  }
   .movie-1-header{
     flex-direction: column;
     height: 70vh;
     justify-content: flex-end;
-    /* align-items: center; */
     width: 80%;
+    padding: 0;  
+  }
+  .movie-dir-time{
+    padding-bottom: 30px;
   }
   .movieProps{
-    font-size: 70px;
+    font-size: 50px;
   }
   .m1h-left{
     flex-basis: 20%;
@@ -782,6 +796,7 @@
   .m1h-right{
     justify-content:center;
     align-items: flex-start;
+    padding-top: 30px;
   }
   .m1h-right h6{
     text-align: left;
@@ -796,10 +811,29 @@
     padding: 30px;
   }
   .movieDetailRight{
-    margin-top: 50px;
+    margin-top: 30px;
   }
   .storyLine{
     width: 100%;
     margin-left: 0%;
+  }
+  .story_video{
+    padding: 20px 0;
+  }
+  .story_video iframe{
+    width: 100%;
+    aspect-ratio: 19/15;
+  }
+
+  .cast-list{
+    height: 40px;
+    overflow: hidden;
+    transition: height 0.5s ease;
+  }
+  .cast-list h5 i{
+    display: inline-block;
+  }
+  #movieNameAgain{
+    margin-top: 30px;
   }
 }

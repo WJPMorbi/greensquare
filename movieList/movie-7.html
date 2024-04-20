@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coco | Movie Recommanded</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/content.css">
-    <link rel="stylesheet" href="css/mediaQuery.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/content.css">
+    <link rel="stylesheet" href="../css/mediaQuery.css">
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
     rel="stylesheet"
 />
-<link rel="icon" type="image/x-icon" href="img/GS-small-logo.png">
+<link rel="icon" type="image/x-icon" href="../img/GS-small-logo.png">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 
@@ -21,24 +21,24 @@
     <div class="sub-header" style="height: 100vh;">
     <nav style="text-shadow: 2px 2px 2px #000;">
         <div class="logo">
-            <img src="img/GS-small-logo.png" alt="GreenSquare"> <p>GreenSquare</p>
+            <img src="../img/GS-small-logo.png" alt="GreenSquare"> <p>GreenSquare</p>
         </div>
         <input type="checkbox" id="nav_check" hidden>
         <div id="navLinks">
             <ul class="LandNav">
-                <li class="hidden"><a href="index.html">Home</a></li>
-                <li class="hidden"><a href="Blog.html">Blog</a></li>
-                <li class="hidden"><a href="About.html">About Me</a></li>
-                <li class="hidden"><a href="Contact.html">Contact</a></li>
+                <li class="hidden"><a href="../index.html">Home</a></li>
+                <li class="hidden"><a href="../Blog.html">Blog</a></li>
+                <li class="hidden"><a href="../About.html">About Me</a></li>
+                <li class="hidden"><a href="../Contact.html">Contact</a></li>
             </ul>
             <ul Class="PortNav">
                 <div class="logo">
-                    <img src="img/GS-small-logo.png" alt="GreenSquare"> <p>GreenSquare</p>
+                    <img src="../img/GS-small-logo.png" alt="GreenSquare"> <p>GreenSquare</p>
                 </div>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a href="About.html">About me</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Blog.html">Blog</a></li>
+                <li><a href="../About.html">About me</a></li>
+                <li><a href="../Contact.html">Contact</a></li>
                 <div class="nav-con-icon">
                     <a href=""><i class="ri-instagram-fill"></i></a>
                     <a href=""><i class="ri-facebook-box-fill"></i></a>
@@ -53,7 +53,8 @@
                 <div class="line-3"></div>
             </div>
     </nav>
-    <div class="movie-1">
+
+    <div class="movieBanner1" style="background-image: url('https://i.pinimg.com/originals/94/b2/46/94b246d29dd2b56fe1060eac18cf5144.jpg');">
         <div class="movie-1-header">
             <div class="m1h-left">
               <div class="movie-dir-time">
@@ -66,7 +67,7 @@
                     <h6 class="MovieGenre"></h6>
                 </div>
               </div>
-              <h1 id="movie1" class="movieProps"></h1>
+              <h1 id="movie7" class="movieProps"></h1>
             </div>
             <div class="m1h-right">
                 <div>
@@ -75,7 +76,7 @@
                     <h6>movie rating</h6>
                 </div>
                 <div>
-                    <a href="https://www.youtube.com/watch?v=Ga6RYejo6Hk&ab_channel=RottenTomatoesTrailers" target="_blank" style="color: #fff;"><i class="ri-play-circle-fill" id="playVideoBtn"></i></a>
+                    <a href="https://www.youtube.com/embed/taE3PwurhYM" target="_blank" style="color: #fff;"><i class="ri-play-circle-fill" id="playVideoBtn"></i></a>
                     
                 </div>
             </div>
@@ -93,6 +94,25 @@
             <li><h6>release date</h6><h6></h6></li>
         </ul>
 
+        <div class="cast-list">
+            <h5>cast <i class="ri-arrow-down-s-fill" style="margin-left: 10px;"></i></h5>
+            <ul>
+                <li><img src="" alt=""> <p></p></li>
+                <li><img src="" alt=""> <p></p></li>
+                <li><img src="" alt=""> <p></p></li>
+                <li><img src="" alt=""> <p></p></li>
+                <li><img src="" alt=""> <p></p></li>
+            </ul>
+        </div>
+        <h1 id="movieNameAgain"></h1>
+        <div id="movieShareIcon">
+            <h5>share</h5>
+            <div>
+                <a href=""><i class="ri-instagram-line"></i></a>
+                <a href=""><i class="ri-facebook-box-line"></i></a>
+                <a href=""><i class="ri-youtube-line"></i></a>        
+            </div>
+        </div>
 
     </div>
     <div class="movieDetailRight">
@@ -102,10 +122,10 @@
             <div class="storyDesc">
                 <p></p>
                 <ul>
-                    <li>action</li>
+                    <li>Animation</li>
                     <li>drama</li>
                     <li>comedy</li>
-                    <li>sci-fi</li>
+                    <!-- <li>sci-fi</li> -->
                     <li></li>
                 </ul>
             </div>            
@@ -148,13 +168,22 @@
 </div>
 
 
-<script src="Javascript/movieDetail.js"></script>
+<script src="../Javascript/movieDetail.js"></script>
 <script>
+let cast_list_h5 = document.querySelector('.cast-list h5');
+let cast_list = document.querySelector(".cast-list");
 
+cast_list_h5.addEventListener("click",()=>{
+    if (cast_list.style.height === "40px" || cast_list.style.height === "") {
+        cast_list.style.height = "auto"; // Setting height to "auto" to expand to content size
+    } else {
+        cast_list.style.height = "40px";
+    }
+})
   
 
 </script>
 
-<script src="Javascript/GSJava.js"></script>
+<script src="../Javascript/GSJava.js"></script>
 </body>
 </html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Movie Recommanded</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/content.css">
+    <link rel="stylesheet" href="../css/mediaQuery.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="icon" type="image/x-icon" href="../img/GS-small-logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <!-- ------------------------- Navbar ------------------------- -->
+    <div class="subHeader" style="height: 100vh;">
+    <nav style="text-shadow: 2px 2px 2px #000;">
+        <div class="logo">
+            <img src="../img/GS-small-logo.png" alt="GreenSquare"> <p>GreenSquare</p>
+        </div>
+        <input type="checkbox" id="nav_check" hidden>
+        <div id="navLinks">
+            <ul class="LandNav">
+                <li class="hidden"><a href="../index.html">Home</a></li>
+                <li class="hidden"><a href="../Blog.html">Blog</a></li>
+                <li class="hidden"><a href="../About.html">About Me</a></li>
+                <li class="hidden"><a href="../Contact.html">Contact</a></li>
+            </ul>
+            <ul Class="PortNav">
+                <div class="logo">
+                    <img src="../img/GS-small-logo.png" alt="GreenSquare"> <p>GreenSquare</p>
+                </div>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Blog.html">Blog</a></li>
+                <li><a href="../About.html">About me</a></li>
+                <li><a href="../Contact.html">Contact</a></li>
+                <div class="nav-con-icon">
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                    <a href=""><i class="ri-facebook-box-fill"></i></a>
+                    <a href=""><i class="ri-youtube-fill"></i></a>
+                </div>
+            </ul>
+        </div>
+        <label for="nav_check" class="MenuBtn">
+            <div>
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
+            </div>
+    </nav>
+
+    <div class="movieBanner1" style="background-image: url('https://m.media-amazon.com/images/M/MV5BMTMxMTE1MTMyNV5BMl5BanBnXkFtZTcwMTQzMzA3NA@@._V1_FMjpg_UX2048_.jpg');">  <!-- Background Image Here-->
+        <div class="movie-1-header">
+            <div class="m1h-left">
+              <div class="movie-dir-time">
+                <div>
+                    <h6>With</h6>
+                    <h6 class="directorName"></h6>
+                </div>
+                <div>
+                    <h6 class="movieDur"></h6>
+                    <h6 class="MovieGenre"></h6>
+                </div>
+              </div>
+              <h1 id="movie10" class="movieProps"></h1> <!-- Movie COde Here-->
+            </div>
+            <div class="m1h-right">
+                <div>
+                    <ul id="starList">
+                    </ul>
+                    <h6>movie rating</h6>
+                </div>
+                <div>
+                    <a href="https://www.youtube.com/embed/PXi3Mv6KMzY" target="_blank" style="color: #fff;"><i class="ri-play-circle-fill" id="playVideoBtn"></i></a>
+                    
+                </div>
+            </div>
+          </div>
+    </div>
+</div>    
+
+<!-- ------------------------- Movie Details------------------------- -->
+<div class="movieDetailsInfo">
+    <div class="movieDetailLeft">
+        <h5>details</h5>
+        <ul>
+            <li><h6>country</h6><h6></h6></li>
+            <li><h6>language</h6><h6></h6></li>
+            <li><h6>release date</h6><h6></h6></li>
+        </ul>
+
+        <div class="cast-list">
+            <h5>cast <i class="ri-arrow-down-s-fill" style="margin-left: 10px;"></i></h5>
+            <ul>
+                <li><img src="" alt=""> <p></p></li>
+                <li><img src="" alt=""> <p></p></li>
+                <li><img src="" alt=""> <p></p></li>
+                <li><img src="" alt=""> <p></p></li>
+                <li><img src="" alt=""> <p></p></li>
+            </ul>
+        </div>
+        <h1 id="movieNameAgain"></h1>
+        <div id="movieShareIcon">
+            <h5>share</h5>
+            <div>
+                <a href=""><i class="ri-instagram-line"></i></a>
+                <a href=""><i class="ri-facebook-box-line"></i></a>
+                <a href=""><i class="ri-youtube-line"></i></a>        
+            </div>
+        </div>
+
+    </div>
+    <div class="movieDetailRight">
+
+        <div class="storyLine">
+            <h5>storyLine</h6>
+            <div class="storyDesc">
+                <p></p>
+                <ul>
+                    <li>Animation</li>
+                    <li>Adventure</li>
+                    <li>Action</li>
+                    <li>comedy</li>
+                    <li></li>
+                </ul>
+            </div>            
+        </div>
+
+        <div class="story_video">
+            <iframe src="" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+
+
+<!-- ------------------------- FOOTER------------------------- -->
+ <footer>
+    <div class="thankyou">
+        <h1>Thank</h1>
+        <h1><div></div>you for</h1>
+        <h1>watching</h1>
+    </div>
+    <div class="ft-contact">
+        <p></p>
+        <div class="ft-cont-main">
+            <h1><i class="ri-phone-fill" style="font-size: 20px; margin-right: 5px;"></i>Contact Number</h1>
+            <p><a href="tel:+917069860691">+91 7069860691</a></p>
+        </div>
+        <div class="ft-cont-main">
+            <h1><i class="ri-mail-line" style="font-size: 20px; margin-right: 5px;"></i>Email</h1>
+            <p><a href="mailto:santhaliyapradeep@gmail.com">santhaliyapradeep@gmail.com</a></p>
+        </div>
+        <div class="ft-cont-main">
+            <a href=""><i class="ri-instagram-fill"></i></a>
+            <a href=""><i class="ri-facebook-box-fill"></i></a>
+            <a href=""><i class="ri-youtube-fill"></i></a>
+        </div>
+    </div>
+</footer>
+
+<div class="ending-line">
+    <p>Made with <i class="ri-heart-fill"></i> by Prpd03x </p>
+</div>
+
+
+<script src="../Javascript/movieDetail.js"></script>
+<script>
+let cast_list_h5 = document.querySelector('.cast-list h5');
+let cast_list = document.querySelector(".cast-list");
+
+cast_list_h5.addEventListener("click",()=>{
+    if (cast_list.style.height === "40px" || cast_list.style.height === "") {
+        cast_list.style.height = "auto"; // Setting height to "auto" to expand to content size
+    } else {
+        cast_list.style.height = "40px";
+    }
+})
+  
+
+</script>
+
+<script src="../Javascript/GSJava.js"></script>
+</body>
+</html>
