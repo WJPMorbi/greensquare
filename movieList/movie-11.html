@@ -54,7 +54,7 @@
             </div>
     </nav>
 
-    <div class="movieBanner1" style="background-image: url('');">  <!-- Background Image Here-->
+    <div class="movieBanner1" style="background-image: url('https://m.media-amazon.com/images/M/MV5BNGJlMjMxY2YtODRmZi00YTZhLThkYWItZTg4MDllYmRmZmI5XkEyXkFqcGdeQXVyMTc0MzUzNzY1._V1_FMjpg_UX2160_.jpg');">  <!-- Background Image Here-->
         <div class="movie-1-header">
             <div class="m1h-left">
               <div class="movie-dir-time">
@@ -67,7 +67,7 @@
                     <h6 class="MovieGenre"></h6>
                 </div>
               </div>
-              <h1 id="movie9" class="movieProps"></h1> <!-- Movie COde Here-->
+              <h1 id="movie11" class="movieProps"></h1> <!-- Movie COde Here-->
             </div>
             <div class="m1h-right">
                 <div>
@@ -95,7 +95,7 @@
         </ul>
 
         <div class="cast-list">
-            <h5>cast <i class="ri-arrow-down-s-fill" style="margin-left: 10px;"></i></h5>
+            <h5>top cast </h5>
             <ul>
                 <li><img src="" alt=""> <p></p></li>
                 <li><img src="" alt=""> <p></p></li>
@@ -106,12 +106,7 @@
         </div>
         <h1 id="movieNameAgain"></h1>
         <div id="movieShareIcon">
-            <h5>share</h5>
-            <div>
-                <a href=""><i class="ri-instagram-line"></i></a>
-                <a href=""><i class="ri-facebook-box-line"></i></a>
-                <a href=""><i class="ri-youtube-line"></i></a>        
-            </div>
+            <i class="ri-movie-2-fill"></i><a href="../movie.html">Back to Movie Collection</a>
         </div>
 
     </div>
@@ -133,6 +128,9 @@
 
         <div class="story_video">
             <iframe src="" frameborder="0"></iframe>
+        </div>
+        <div class="movieBackBtn">
+            <i class="ri-movie-2-fill"></i><a href="../movie.html">Back to Movie Collection</a>
         </div>
     </div>
 </div>
@@ -169,20 +167,6 @@
 
 
 <script src="../Javascript/movieDetail.js"></script>
-<script>
-let cast_list_h5 = document.querySelector('.cast-list h5');
-let cast_list = document.querySelector(".cast-list");
-
-cast_list_h5.addEventListener("click",()=>{
-    if (cast_list.style.height === "40px" || cast_list.style.height === "") {
-        cast_list.style.height = "auto"; // Setting height to "auto" to expand to content size
-    } else {
-        cast_list.style.height = "40px";
-    }
-})
-  
-
-</script>
 
 <script src="../Javascript/GSJava.js"></script>
 </body>

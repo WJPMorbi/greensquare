@@ -285,8 +285,8 @@ const movie_detail = [
         releaseDate:"June 06, 2008",
         insta:"",
         cast1:
-        {src:"https://m.media-amazon.com/images/M/MV5BYTFiMWNlNmItMDRiYy00NzA4LWE5YjItZmViNWQ2NzhhOWZlXkEyXkFqcGdeQXVyMTA2Mjc5ODMy._V1_QL75_UX280_CR0,0,280,280_.jpg",
-        name: "Jack Black"},
+        {src:"https://m.media-amazon.com/images/M/MV5BMTk4MDM0MDUzM15BMl5BanBnXkFtZTcwOTI4MzU1Mw@@._V1_QL75_UX280_CR0,9,280,280_.jpg",
+        name: "Jackie Chan"},
         cast2:
         {src:"https://m.media-amazon.com/images/M/MV5BMjg5NDg3OTQtYzMyYS00YjhhLTk2NmEtZTExNGViYTczZTU2XkEyXkFqcGdeQXVyMTU1MTU2MDI@._V1_QL75_UX280_CR0,1,280,280_.jpg",
         name: "Ian McShane"},
@@ -297,158 +297,156 @@ const movie_detail = [
         {src:"https://m.media-amazon.com/images/M/MV5BMTc3NzU0ODczMF5BMl5BanBnXkFtZTcwODEyMDY5Mg@@._V1_QL75_UX280_CR0,2,280,280_.jpg",
         name: "Dustin Hoffman"},
         cast5:
-        {src:"https://m.media-amazon.com/images/M/MV5BMTk4MDM0MDUzM15BMl5BanBnXkFtZTcwOTI4MzU1Mw@@._V1_QL75_UX280_CR0,9,280,280_.jpg",
-        name: "Jackie Chan"}
+        {src:"https://m.media-amazon.com/images/M/MV5BYTFiMWNlNmItMDRiYy00NzA4LWE5YjItZmViNWQ2NzhhOWZlXkEyXkFqcGdeQXVyMTA2Mjc5ODMy._V1_QL75_UX280_CR0,0,280,280_.jpg",
+        name: "Jack Black"}
 
     },{
         srN:"11",
         movieName:"Moana",
-        time:"95 min",
-        Director:"Enrico casaroca",
-        genre:"Animation, Comedy, Adventure",
-        fill: 5,
-        line: 0,
-        video1:"https://www.youtube.com/embed/",
-        story:"In 'Moana,' a spirited Polynesian teenager sets sail on a daring voyage across the Pacific Ocean to save her island home. Guided by the demigod Maui, Moana encounters mythical creatures and battles fierce forces of nature. Along the way, she discovers her own identity and learns the importance of courage, self-discovery, and embracing her heritage. With its breathtaking animation and uplifting soundtrack, 'Moana' celebrates the power of determination and the spirit of adventure.",
-        country:"US, Italy, Japan",
-        language:"English, Italian",
-        releaseDate:"June 18, 2021",
+        time:"107 min",
+        Director:"Ron Clements,John Musker,Don Hall",
+        genre:"Animation, Adventure, Comedy",
+        fill: 4,
+        line: 1,
+        video1:"https://www.youtube.com/embed/LKFuXETZUsI",
+        story:"Moana Waialiki is a sea voyaging enthusiast and the only daughter of a chief in a long line of navigators. When her island's fishermen can't catch any fish and the crops fail, she learns that the demigod Maui caused the blight by stealing the heart of the goddess, Te Fiti. The only way to heal the island is to persuade Maui to return Te Fiti's heart, so Moana sets off on an epic journey across the Pacific. The film is based on stories from Polynesian mythology.",
+        country:"United states",
+        language:"English",
+        releaseDate:"Dec 13, 2016",
         insta:"",
         cast1:
-        {src:"",
-        name: "Jacobn tremblay"},
+        {src:"https://m.media-amazon.com/images/M/MV5BODRmOTQ3MTEtMWUxNy00MGFhLTg2ZjUtM2MwOTZlNTk3Y2NhXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX280_CR0,24,280,280_.jpg",
+        name: "Auli'i Cravalho"},
         cast2:
-        {src:"",
-        name: "Jack Dylan Grazer"},
+        {src:"https://m.media-amazon.com/images/M/MV5BOWU1ODBiNGUtMzVjNi00MzdhLTk0OTktOWRiOTIxMWNhOGI2XkEyXkFqcGdeQXVyMTU2OTM5NDQw._V1_QL75_UX280_CR0,24,280,280_.jpg",
+        name: "Dwayne Johnson"},
         cast3:
-        {src:"",
-        name: "Emma Berman"},
+        {src:"https://m.media-amazon.com/images/M/MV5BMWNmNzEzMGUtMDc1NS00OTlkLWExMzktNTAzOGQ2N2RkMjI3XkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_QL75_UX280_CR0,0,280,280_.jpg",
+        name: "Rachel House"},
         cast4:
-        {src:"",
-        name: "Maya Rudolph"},
+        {src:"https://m.media-amazon.com/images/M/MV5BMmIyNDQwODMtMTI4Yy00ZTY5LWEyZmYtNTQ0NGUzMjdhMGJiXkEyXkFqcGdeQXVyMTE0MzYxMjM5._V1_QL75_UX280_CR0,0,280,280_.jpg",
+        name: "Temuera Morrison"},
         cast5:
-        {src:"",
-        name: "Marco Beriselli"}
+        {src:"https://m.media-amazon.com/images/M/MV5BMjE4ODY4Njc5N15BMl5BanBnXkFtZTcwMjk1ODIyMw@@._V1_QL75_UX280_CR0,19,280,280_.jpg",
+        name: "Jemaine Clement"}
 
     },{
         srN:"12",
         movieName:"Money Heist (2017)",
-        time:"95 min",
-        Director:"Enrico casaroca",
-        genre:"Animation, Comedy, Adventure",
+        time:"41 - EP",
+        Director:"Álex Pina",
+        genre:"Action, Crime, Drama",
         fill: 5,
         line: 0,
-        video1:"https://www.youtube.com/embed/",
+        video1:"https://www.youtube.com/embed/_InqQJRqGW4",
         story:"In 'Money Heist,' a criminal mastermind known as 'The Professor' recruits a diverse group of skilled individuals to carry out a daring plan: to infiltrate the Royal Mint of Spain and print billions of euros while holding hostages. As the meticulously orchestrated heist unfolds, the robbers, each using city names as aliases, develop complex relationships and confront personal demons. Tensions rise as they navigate unforeseen obstacles, evade law enforcement, and grapple with moral dilemmas. The series explores themes of loyalty, betrayal, and the human psyche under extreme pressure. With its non-linear storytelling and intense suspense, 'Money Heist' captivates audiences worldwide, earning acclaim for its gripping narrative, well-drawn characters, and unexpected twists. As the heist progresses, the lines between protagonist and antagonist blur, leaving viewers questioning who they should root for in this high-stakes game of cat and mouse.",
-        country:"US, Italy, Japan",
-        language:"English, Italian",
-        releaseDate:"June 18, 2021",
+        country:"spain",
+        language:"Spanish",
+        releaseDate:"May 2, 2017",
         insta:"",
         cast1:
-        {src:"",
-        name: "Jacobn tremblay"},
+        {src:"https://m.media-amazon.com/images/M/MV5BMjBkMTc4ODctY2U1NC00NjQzLTliYTItZDM1MTkwNWNmODRjXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_QL75_UX280_CR0,0,280,280_.jpg",
+        name: "Álvaro Morte"},
         cast2:
-        {src:"",
-        name: "Jack Dylan Grazer"},
+        {src:"https://m.media-amazon.com/images/M/MV5BZGVlMTQyODEtNTlmZS00MTg1LWEwNmYtZmRlNjFmNzg0MDNhXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_QL75_UX280_CR0,23,280,280_.jpg",
+        name: "Álvaro Morte"},
         cast3:
-        {src:"",
-        name: "Emma Berman"},
+        {src:"https://m.media-amazon.com/images/M/MV5BODMzZDNjZjUtYzlhOC00ODNhLWI4NDMtNjc0ZmE1YWNlYzQ0XkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_QL75_UX280_CR0,0,280,280_.jpg",
+        name: "Itziar Ituño"},
         cast4:
-        {src:"",
-        name: "Maya Rudolph"},
+        {src:"https://m.media-amazon.com/images/M/MV5BNTQwOTZlOTktZWI2Ni00MGU0LTg3MDItOGFlOGZjYzVmOTYwXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_QL75_UX280_CR0,0,280,280_.jpg",
+        name: "Pedro Alonso"},
         cast5:
-        {src:"",
-        name: "Marco Beriselli"}
-
+        {src:"https://m.media-amazon.com/images/M/MV5BN2I0MDdiZDUtMWE2MS00OWFmLWJkZDMtMThlZmJmZDQ5MGZlXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_QL75_UY280_CR70,0,280,280_.jpg",
+        name: "Miguel Herrán"}
     },{
         srN:"13",
-        movieName:"12th fail",
-        time:"95 min",
-        Director:"Enrico casaroca",
-        genre:"Animation, Comedy, Adventure",
-        fill: 5,
-        line: 0,
-        video1:"https://www.youtube.com/embed/",
-        story:"In '12th Fail,' a young man faces the stigma of failing his 12th-grade exams while navigating familial and societal pressures. Determined to prove his worth, he embarks on a journey of self-discovery and redemption. Through perseverance and self-belief, he challenges the norms and strives to create his own path to success. The film delves into themes of resilience, second chances, and the importance of believing in oneself despite setbacks.",
-        country:"US, Italy, Japan",
-        language:"English, Italian",
-        releaseDate:"June 18, 2021",
+        movieName:"12th Fail",
+        time:"147 min",
+        Director:"Vidhu Vinod Chopra",
+        genre:"Biography, Drama",
+        fill: 4,
+        line: 1,
+        video1:"https://www.youtube.com/embed/WeMJo701mvQ",
+        story:"Manoj Kumar Sharma belongs to Chambal village where cheating in exam is a common thing. He is appearing for his 12th standard exams and eyeing a peon's job. But a strict police officer DSP Dushyant Singh arrives during the exams and stops the cheating process, Manoj is unable to pass the examinations and starts to ride a passenger vehicle with brother Kamlesh. They both land in trouble with goons of a politician but Dushyant Singh comes to their aid. Inspired by his honesty Manoj starts considering him an idol and wants to become like him. The following year he clears his 12th standard exams and dreams of becoming a DSP officer but his destiny has different plans which brings Manoj into the world of UPSC, one of the toughest exams in the world.",
+        country:'India',
+        language:"Hindi, Tamil, Telugu",
+        releaseDate:"Oct 27, 2023",
         insta:"",
         cast1:
-        {src:"",
-        name: "Jacobn tremblay"},
+        {src:"https://m.media-amazon.com/images/M/MV5BYjM0NGNhNzItYWE2Yi00NTFkLTg1NjEtNzM3MzUxMGZmZTJiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL75_UY280_CR70,0,280,280_.jpg",
+        name: "Vikrant Massey"},
         cast2:
-        {src:"",
-        name: "Jack Dylan Grazer"},
+        {src:"https://m.media-amazon.com/images/M/MV5BYWMzY2UzMjAtYzYwOS00ZDI5LWJhYTItMTNiZDllYWIwZDBiXkEyXkFqcGdeQXVyMTA0NzgwMzAz._V1_QL75_UX280_CR0,24,280,280_.jpg",
+        name: "Medha Shankr"},
         cast3:
-        {src:"",
-        name: "Emma Berman"},
+        {src:"https://m.media-amazon.com/images/M/MV5BYTA4NTY2YjAtYjQ3Yi00NjZmLWI4NjQtMmQ1M2FhMzY3YjA2XkEyXkFqcGdeQXVyMTU0ODI1NTA2._V1_QL75_UY280_CR70,0,280,280_.jpg",
+        name: "Anant Joshi"},
         cast4:
-        {src:"",
-        name: "Maya Rudolph"},
+        {src:"https://m.media-amazon.com/images/M/MV5BZDE4NDIxN2QtNmQwZi00ZjA4LWExNjgtZGRjNTFlZDQzMzlhXkEyXkFqcGdeQXVyMTYyNjg2MzUz._V1_QL75_UX280_CR0,0,280,280_.jpg",
+        name: "Anshuman Pushkar"},
         cast5:
-        {src:"",
-        name: "Marco Beriselli"}
-
+        {src:"https://m.media-amazon.com/images/M/MV5BZTNlMTAwZmUtNWI1Yi00YjYwLWIwN2UtYTVkZmRhMDdiMGRmXkEyXkFqcGdeQXVyMjQ2MDI5ODE@._V1_QL75_UX280_CR0,0,280,280_.jpg",
+        name: "Geeta Agrawal Sharma"}
     },{
         srN:"14",
         movieName:"Jai Bhim",
-        time:"95 min",
-        Director:"Enrico casaroca",
-        genre:"Animation, Comedy, Adventure",
+        time:"164 min",
+        Director:"T. j. Gnanavel",
+        genre:"Crime, drama, mystery",
         fill: 5,
         line: 0,
-        video1:"https://www.youtube.com/embed/",
+        video1:"https://www.youtube.com/embed/nnXpbTFrqXA",
         story:"In 'Jai Bhim,' inspired by true events, a Dalit lawyer fights for justice against systemic caste discrimination in India's legal system. Challenging powerful forces and risking his life, he represents a young Dalit woman raped by upper-caste men. The film sheds light on the pervasive casteism and corruption within society and the judiciary. Through his unwavering determination, the lawyer becomes a symbol of hope and resistance for marginalized communities.",
-        country:"US, Italy, Japan",
-        language:"English, Italian",
-        releaseDate:"June 18, 2021",
+        country:"India",
+        language:"Hindi, Tamil, Telugu",
+        releaseDate:"November 02, 2021",
         insta:"",
         cast1:
-        {src:"",
-        name: "Jacobn tremblay"},
+        {src:"https://m.media-amazon.com/images/M/MV5BYzlkZmNkNWItN2EwOC00NjliLTg4NmYtOTE2Zjg1ZjU5ZDBhXkEyXkFqcGdeQXVyMTU0ODI1NTA2._V1_QL75_UY280_CR70,0,280,280_.jpg",
+        name: "Suriya"},
         cast2:
-        {src:"",
-        name: "Jack Dylan Grazer"},
+        {src:"https://m.media-amazon.com/images/M/MV5BNGJmN2E2ZjktMzk2Ny00ZWE5LTkxMWYtZDdjODE2ZTFlNmM1XkEyXkFqcGdeQXVyMjkxNzQ1NDI@._V1_QL75_UX280_CR0,22,280,280_.jpg",
+        name: "Lijo mol jose"},
         cast3:
-        {src:"",
-        name: "Emma Berman"},
+        {src:"https://m.media-amazon.com/images/M/MV5BNDYwZWVjYzYtN2RlNi00ZjZmLWE4ZTAtZGI4MDhjOWNiOTJkXkEyXkFqcGdeQXVyMjYwMDk5NjE@._V1_QL75_UX280_CR0,0,280,280_.jpg",
+        name: "Manikandan K."},
         cast4:
-        {src:"",
-        name: "Maya Rudolph"},
+        {src:"https://m.media-amazon.com/images/M/MV5BZjBkNTg4OTktMzMxMy00Y2Q1LTkyMzUtNjc2NWNkYzEwYjdiXkEyXkFqcGdeQXVyMjkxNzQ1NDI@._V1_QL75_UX280_CR0,22,280,280_.jpg",
+        name: "Rajisha Vijayan"},
         cast5:
-        {src:"",
-        name: "Marco Beriselli"}
+        {src:"https://m.media-amazon.com/images/M/MV5BMjQ2MjA4NjU0MF5BMl5BanBnXkFtZTgwMTgwMDMzOTE@._V1_QL75_UX280_CR0,24,280,280_.jpg",
+        name: "Prakash Raj"}
 
     },{
         srN:"15",
         movieName:"3 idiots",
-        time:"95 min",
-        Director:"Enrico casaroca",
-        genre:"Animation, Comedy, Adventure",
+        time:"170 min",
+        Director:"Rajkumar Hirani",
+        genre:"Comedy, Drama",
         fill: 5,
         line: 0,
-        video1:"https://www.youtube.com/embed/",
+        video1:"https://www.youtube.com/embed/xvszmNXdM4w",
         story:"In '3 Idiots,' three engineering students navigate the challenges of college life while questioning societal norms and pursuing their passions. Led by the free-spirited Rancho, they challenge the rigid educational system and advocate for learning beyond textbooks. Through humor and heart, the film explores themes of friendship, individuality, and the pursuit of happiness. With its blend of comedy and social commentary, '3 Idiots' inspires audiences to rethink conventional definitions of success and education.",
-        country:"US, Italy, Japan",
-        language:"English, Italian",
-        releaseDate:"June 18, 2021",
+        country:"India",
+        language:"Hindi",
+        releaseDate:"December 25, 2009",
         insta:"",
         cast1:
-        {src:"",
-        name: "Jacobn tremblay"},
+        {src:"https://m.media-amazon.com/images/M/MV5BMjAwMjk3NDUzN15BMl5BanBnXkFtZTcwNjI4MTY0NA@@._V1_QL75_UX280_CR0,24,280,280_.jpg",
+        name: "Amir khan"},
         cast2:
-        {src:"",
-        name: "Jack Dylan Grazer"},
+        {src:"https://m.media-amazon.com/images/M/MV5BY2FmMGJiM2EtNmZiNi00NDUwLThkNTEtYTRhMmUzOTg1MDZmXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_QL75_UX280_CR0,24,280,280_.jpg",
+        name: "Madhavan"},
         cast3:
-        {src:"",
-        name: "Emma Berman"},
+        {src:"https://m.media-amazon.com/images/M/MV5BMzg5NzRiM2QtM2NiNS00MjFmLWI0Y2MtNmIyMDllMjhhMWM5XkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_QL75_UX280_CR0,11,280,280_.jpg",
+        name: "Mona Singh"},
         cast4:
-        {src:"",
-        name: "Maya Rudolph"},
+        {src:"https://m.media-amazon.com/images/M/MV5BOTJlY2U2ZmYtMzU3Ny00ZDI3LWEwMDYtOWIxNzdhZDI5ZWRkXkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_QL75_UY414_CR18,0,280,414_.jpg",
+        name: "Sharman Joshi"},
         cast5:
-        {src:"",
-        name: "Marco Beriselli"}
+        {src:"https://m.media-amazon.com/images/M/MV5BMjAyNjM4NTAwN15BMl5BanBnXkFtZTcwNDkxNzQzNg@@._V1_QL75_UY280_CR70,0,280,280_.jpg",
+        name: "Kareena Kapoor"}
 
     },{
         srN:"16",
@@ -458,7 +456,7 @@ const movie_detail = [
         genre:"Animation, Comedy, Adventure",
         fill: 5,
         line: 0,
-        video1:"https://www.youtube.com/embed/",
+        video1:"https://www.youtube.com/embed/VDm_2m-Hg6c",
         story:"In 'Captain Underpants,' two mischievous fourth-graders, George and Harold, hypnotize their principal, turning him into the bumbling superhero 'Captain Underpants.' Together, they battle villains and embark on hilarious adventures while trying to keep their school safe. Filled with slapstick humor and imaginative storytelling, the film celebrates the power of friendship and creativity. With its zany antics and irreverent charm, 'Captain Underpants' is a delightfully absurd and entertaining animated comedy.",
         country:"US, Italy, Japan",
         language:"English, Italian",
@@ -488,7 +486,7 @@ const movie_detail = [
         genre:"Animation, Comedy, Adventure",
         fill: 5,
         line: 0,
-        video1:"https://www.youtube.com/embed/",
+        video1:"https://www.youtube.com/embed/TcMBFSGVi1c",
         story:"'Avengers Endgame' culminates the Marvel Cinematic Universe saga as Earth's mightiest heroes embark on a perilous mission to reverse Thanos' catastrophic snap. The surviving Avengers confront their pasts, grappling with loss and sacrifice, while devising a daring plan to rewrite history. Assembling across time and space, they face formidable challenges and reunite with familiar faces, culminating in an epic showdown against Thanos. Fueled by themes of redemption, teamwork, and resilience, 'Endgame' delivers an emotional rollercoaster, weaving intricate character arcs and breathtaking action sequences. With its stellar ensemble cast and spectacular visuals, the film marks a monumental conclusion to over a decade of superhero storytelling.",
         country:"US, Italy, Japan",
         language:"English, Italian",

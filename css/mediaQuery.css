@@ -764,18 +764,41 @@
 }
 
 /* ================================================ movie details Page ================  */
-
-@media (max-width:450px){
-  .subHeader{
-    background-image: linear-gradient(red, yellow);
+@media (max-width:780px){
+  .movieDetailsInfo{
+    display: flex;
+    max-width:780px ;
+    padding: 100px 50px;
+    color: #fff;
+    margin-inline: auto ;
+    font-family: 'poppins';
   }
+  .movie-1-header{
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* .m1h-left, .m1h-right{
+    border: 2px solid orange;
+  } */
+  .m1h-right{
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 50px;
+    text-align: left;
+  }
+  .m1h-right h6{
+    margin-left: 10px;
+  }
+}
+@media (max-width:540px){
   .movieBanner1{
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: 100% 20%;
+    background-position: 50% 50%;
   }
   .movieBanner1::before{
-    background-image: linear-gradient(to bottom, rgb(0 0 0/0.2),transparent);
+    background-image: linear-gradient(to bottom, rgb(0 0 0/ 0.5) 0%, rgb(0 0 0/ 1) 101%);
+    backdrop-filter: blur(5px);
   }
   .movie-1-header{
     flex-direction: column;
@@ -783,9 +806,6 @@
     justify-content: flex-end;
     width: 80%;
     padding: 0;  
-  }
-  .movie-dir-time{
-    padding-bottom: 30px;
   }
   .movieProps{
     font-size: 50px;
@@ -808,7 +828,7 @@
   }
   .movieDetailsInfo{
     flex-direction: column;
-    padding: 30px;
+    padding: 50px 30px;
   }
   .movieDetailRight{
     margin-top: 30px;
@@ -824,16 +844,17 @@
     width: 100%;
     aspect-ratio: 19/15;
   }
-
-  .cast-list{
-    height: 40px;
-    overflow: hidden;
-    transition: height 0.5s ease;
-  }
   .cast-list h5 i{
     display: inline-block;
   }
   #movieNameAgain{
     margin-top: 30px;
   }
+  #movieShareIcon{
+    display: none;
+  }
+  .movieBackBtn{
+    display: flex;
+  }
+
 }

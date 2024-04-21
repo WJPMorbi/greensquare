@@ -581,12 +581,13 @@
   gap: 30px;
   position: relative;
   font-size: 18px;
+  padding-bottom: 30px;
   }
   .m1h-left{
     flex-basis: 50%;
   }
   .movieProps{
-    font-size: 6vw;
+    font-size: 5vw;
     color: #fff;
     line-height: 1.1;
   }
@@ -626,14 +627,13 @@
   .movieDetailsInfo{
     display: flex;
     max-width:1250px ;
-    margin: 100px auto;
+    padding: 100px 50px;
     color: #fff;
-    /* border: 2px solid orange; */
+    margin-inline: auto ;
     font-family: 'poppins';
   }
   .movieDetailLeft{
       flex-basis: 40%;
-      /* border: 2px solid red; */
   }
   .movieDetailLeft h5{
     text-transform: uppercase;
@@ -734,19 +734,32 @@
     margin-top: 100px;
   }
   #movieShareIcon {
-    /* border: 2px solid red; */
     margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    color: rgb(86, 86, 255);
   }
   #movieShareIcon h5{
-    /* border: 1px solid orange; */
     margin-bottom: 20px;
-    color: #666;
+    
   }
-  #movieShareIcon div i{
-    font-size: 20px;
-    color:  #666;
+  #movieShareIcon i{
+    font-size: 18px;
+    margin-right: 10px;
   }
-  #movieShareIcon div a{
-    /* border: 2px solid red; */
+  #movieShareIcon a{
     margin-right: 20px;
+    color: rgb(86, 86, 255);
+  }
+  .movieBackBtn {
+    display: flex;align-items: center;
+    display: none;
+  }
+  .movieDetailRight i{
+    font-size: 18px;
+    margin-right: 10px;
+    color: rgb(86, 86, 255);
+  }
+  .movieDetailRight a{
+    color: rgb(86, 86, 255);
   }
