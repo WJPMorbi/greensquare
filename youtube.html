@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="img/GS-small-logo.png">
+    <title>YouTube inspiration | GreenSquare</title>
+</head>
+<body class="bg-black">
+    <!-- <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div> -->
+<!-- ------------------------- -->
+
+<header class="Youtube_header">
+<!-- ------------------------- Navbar ------------------------- -->
+    <nav>
+        <div class="logo">
+            <img src="img/GS-small-logo.png" alt="GreenSquare"> <p>GreenSquare</p>
+        </div>
+        <input type="checkbox" id="nav_check" hidden>
+        <div id="navLinks">
+            <ul class="LandNav">
+                <li class="hidden"><a href="index.html">Home</a></li>
+                <li class="hidden"><a href="Blog.html">Blog</a></li>
+                <li class="hidden"><a href="About.html">About Me</a></li>
+                <li class="hidden"><a href="Contact.html">Contact</a></li>
+            </ul>
+            <ul Class="PortNav">
+                <div class="logo">
+                    <img src="img/GS-small-logo.png" alt="GreenSquare"> <p>GreenSquare</p>
+                </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="About.html">About Me</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <div class="nav-con-icon">
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                    <a href=""><i class="ri-facebook-box-fill"></i></a>
+                    <a href=""><i class="ri-youtube-fill"></i></a>
+                </div>
+            </ul>
+        </div>
+        <label for="nav_check" class="MenuBtn">
+            <div>
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
+            </div>
+    </nav>    
+
+    <div class="Youtube_header_title">
+        
+        <h1><span><i class="ri-youtube-fill"></i></span> Inspiration YouTube Video</h1>
+        <p>YouTube inspirational videos tell stories about people who've faced challenges but didn't give up. They share how they succeeded, offering hope and encouragement. These videos remind us that we can overcome tough times and achieve our goals with determination and a positive attitude.</p>
+    </div>
+    
+</header>
+<!-- ------------------------- Main------------------------- -->
+<div class="Yt_btn_row">
+    <p>Visit My Youtube Channel Here >></p>
+    <div class="MyYtBtn"><a href=""><i class="ri-youtube-fill YouTubeBtn"></i><p>My YouTube</p></a></div>
+</div>
+
+<div class="Youtube_video_container">
+    
+</div>
+<!-- ------------------------- FOOTER------------------------- -->
+<footer>
+    <div class="thankyou">
+        <h1>Thank</h1>
+        <h1><div></div>you for</h1>
+        <h1>watching</h1>
+    </div>
+    <div class="ft-contact">
+        <p></p>
+        <div class="ft-cont-main">
+            <h1><i class="ri-phone-fill" style="font-size: 20px; margin-right: 5px;"></i>Contact Number</h1>
+            <p><a href="tel:+917069860691">+91 7069860691</a></p>
+        </div>
+        <div class="ft-cont-main">
+            <h1><i class="ri-mail-line" style="font-size: 20px; margin-right: 5px;"></i>Email</h1>
+            <p><a href="mailto:santhaliyapradeep@gmail.com">santhaliyapradeep@gmail.com</a></p>
+        </div>
+        <div class="ft-cont-main">
+            <a href=""><i class="ri-instagram-fill"></i></a>
+            <a href=""><i class="ri-facebook-box-fill"></i></a>
+            <a href=""><i class="ri-youtube-fill"></i></a>
+        </div>
+    </div>
+</footer>
+
+<div class="ending-line">
+    <p>Made with <i class="ri-heart-fill"></i> by Prpd03x </p>
+</div>
+
+<script src="Javascript/GSJava.js"></script>
+<script src="Javascript/YtDetails.js"></script>
+<script>
+    let cont_img = document.querySelectorAll('.cont-img')[1];
+    let cont_img2 = document.querySelectorAll('.cont-img2')[1];
+    let cont_img3 = document.querySelectorAll('.cont-img')[2];
+    cont_img.style.backgroundImage = "linear-gradient(to right, rgba(1, 1, 1, 0), #111), url(img/Movie.jpeg)";
+    cont_img2.style.backgroundImage = "linear-gradient(to right, #111, rgba(1,1,1,0)), url(img/fitness.jpg)";
+    cont_img3.style.backgroundImage = "linear-gradient(to right, transparent, #111), url(img/Book-self.jpeg)";
+
+</script>
+</body>
+</html>
