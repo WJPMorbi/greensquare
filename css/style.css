@@ -1288,8 +1288,8 @@ small {
 }
 /* ================================= youtube page =================================== */
 .Youtube_header{
-  background-image:linear-gradient(rgb(0 0 0 / 0.78), rgb(0 0 0 / 1)), url(https://source.unsplash.com/selective-focus-photography-of-person-using-tablet-computer-09nSGnb8ivA);
-  height: 50vw;
+  background-image:linear-gradient(rgb(0 0 0 / 0.5), rgb(0 0 0 / 1)), url(https://source.unsplash.com/mountain-surrounded-by-body-of-water-during-daytime-qfntmjboDyc);
+  height: 40vw;
 }
 .Youtube_header_title{
   position: absolute;
@@ -1359,7 +1359,7 @@ small {
   max-width: 1500px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 .Yt_card{
@@ -1369,12 +1369,13 @@ small {
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 .yt_channel_logo{
   display: flex;
   align-items: center;
   gap:10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .yt_channel_logo img{
   width: 35px; height: 35px;
@@ -1384,7 +1385,7 @@ small {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
-  margin-bottom: 15px;
+  /* margin-bottom: 10px; */
 }
 .Yt_card h4{
   font-size: 15px;
@@ -1392,13 +1393,36 @@ small {
 }
 .Yt_card h3{
   font-weight: normal;
-  font-size: 15px;
+  font-size: 13px;
 }
 .YtChTitle{
-  color: #666;
+  color: #ccc;
 }
 .Yt_card p {
-  margin-top: 15px;
+  margin-top: 10px;
   font-size: 12px;
   letter-spacing: 1px;
+}
+
+/* ================================== Yt Search ================================ */
+
+.YtSearch {
+  max-width: 1500px;
+  margin:30px auto 0;
+  padding:0 50px;
+  
+}
+.YtSearch input{
+  max-width: 500px;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  background: 0;
+  border: 2px solid grey;
+  outline: 0;
+  font-size: 15px;
+  color: #fff;
+}
+.YtSearch input::placeholder{
+  font-size: 15px;
 }

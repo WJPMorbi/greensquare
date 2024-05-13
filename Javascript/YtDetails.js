@@ -68,6 +68,42 @@ const YtDetails = [
         YtCHannelTitle:"Special Forces Aur Yeti Ki Kahaaniyan Ft. Major Sushant | TheRanveerShow...",
         YtCHannelViews:"1M+",
         YtUrl:"https://youtu.be/Eqnrhwca77w?si=ATNVmBJnEVqOizKW"
+    },
+    {
+        id:"8",
+        YtChannelLogo:"https://yt3.ggpht.com/zLCmRAzT2hBuCp8Tsk2fpLPok1guN8Bxi3L1SaH-MhRF4udf7Hw26Yba1kxNsDyCGxUsg1lU=s176-c-k-c0x00ffffff-no-rj-mo",
+        YtChannelName:"A2 Motivation by Arvind Arora",
+        YtChannelPoster:"https://i.ytimg.com/vi_webp/84l5qrAaKRs/hqdefault.webp",
+        YtCHannelTitle:"Law of Attraction कैसे करता है काम🤔? @MiteshKhatriLOA #Podcast with #ArvindArora",
+        YtCHannelViews:"400k+",
+        YtUrl:"https://m.youtube.com/watch?v=84l5qrAaKRs&pp=ygUUYXJ2aW5kIGFyb3JhIHBvZGNhc3Q%3D"
+    },
+    {
+        id:"9",
+        YtChannelLogo:"https://yt3.ggpht.com/oQ2NQMuq-9IS6_MZdsGXa0RWecaACremA01Z7jo-YpoEF1H6PyUF8PZzXkV10OYwSP3UMJDeTg=s68-c-k-c0x00ffffff-no-rj",
+        YtChannelName:"Dhruv Rathee",
+        YtChannelPoster:"https://i.ytimg.com/vi/9WH4_DgFDJo/hqdefault.jpg",
+        YtCHannelTitle:"Mystery of World's Oldest Human | The Secret of Living 120+ years | Dhruv Rathee",
+        YtCHannelViews:"7M+",
+        YtUrl:"https://m.youtube.com/watch?v=9WH4_DgFDJo&t=12s&pp=ygUXZGhydXYgcmF0aGVlIGxpZSBsb25nZXI%3D"
+    },
+    {
+        id:"10",
+        YtChannelLogo:"https://yt3.ggpht.com/ytc/AIdro_n6L7_c7YGCVaOaWPQYtuDE-LKA6I4tZ_DgvS61nR28_HA=s68-c-k-c0x00ffffff-no-rj",
+        YtChannelName:"Ranveer Allahbadia",
+        YtChannelPoster:"https://i.ytimg.com/vi_webp/cDfLrpz6LJQ/hqdefault.webp",
+        YtCHannelTitle:"Col. Rajeev Bharwan: Stories from 1971 Indo-Pak War And Bravery of Gorkha Regiment | TRS हिंदी 124",
+        YtCHannelViews:"8M+",
+        YtUrl:"https://m.youtube.com/watch?v=cDfLrpz6LJQ&pp=ygUScmFudmVlciBhbGxhaGJhZGlh"
+    },
+    {
+        id:"11",
+        YtChannelLogo:"https://yt3.ggpht.com/ytc/AIdro_n6L7_c7YGCVaOaWPQYtuDE-LKA6I4tZ_DgvS61nR28_HA=s68-c-k-c0x00ffffff-no-rj",
+        YtChannelName:"Ranveer Allahbadia",
+        YtChannelPoster:"https://i.ytimg.com/vi_webp/KAt8t9YJfV4/hqdefault.webp",
+        YtCHannelTitle:"Doglapan Exposed - Ashneer Grover On TRS | The Ranveer Show हिंदी 130",
+        YtCHannelViews:"4.6M+",
+        YtUrl:"https://m.youtube.com/watch?v=KAt8t9YJfV4&pp=ygUScmFudmVlciBhbGxhaGJhZGlh"
     }
 ]
 

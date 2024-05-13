@@ -63,7 +63,10 @@
 <!-- ------------------------- Main------------------------- -->
 <div class="Yt_btn_row">
     <p>Visit My Youtube Channel Here >></p>
-    <div class="MyYtBtn"><a href=""><i class="ri-youtube-fill YouTubeBtn"></i><p>My YouTube</p></a></div>
+    <div class="MyYtBtn"><a href="https://youtube.com/@PradeepWorld"><i class="ri-youtube-fill YouTubeBtn"></i><p>My YouTube</p></a></div>
+</div>
+<div class="YtSearch">
+    <input type="text" name="" id="find2" placeholder = "search" onkeyup="search2()">
 </div>
 
 <div class="Youtube_video_container">
@@ -108,6 +111,22 @@
     cont_img2.style.backgroundImage = "linear-gradient(to right, #111, rgba(1,1,1,0)), url(img/fitness.jpg)";
     cont_img3.style.backgroundImage = "linear-gradient(to right, transparent, #111), url(img/Book-self.jpeg)";
 
+    function search2(){
+        let insertedText = document.getElementById('find2').value.toUpperCase();
+        let YTCARD = document.querySelectorAll('.Yt_card');
+
+        for(i=0; i <= YtDetails.length ; i++){
+            let a = YTCARD[i].getElementsByTagName('h3')[0];
+            let value = a.innerHTML || a.innerText || a.textContent;
+
+            if(value.toUpperCase().indexOf(insertedText) > -1){
+                YTCARD[i].style.display = "";
+            }
+            else {
+                YTCARD[i].style.display = "none";
+            }
+        }
+    }
 </script>
 </body>
 </html>

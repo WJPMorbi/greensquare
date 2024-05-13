@@ -859,6 +859,12 @@
 }
 /* ================================= youtube page =================================== */
 @media (max-width:780px){
+  .Youtube_header{
+    height: 60vh;
+  }
+  .Youtube_video_container{
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+}
   .Youtube_header_title{
     width: 90%;
   }
@@ -874,7 +880,7 @@
   }
   .Youtube_header{
     height: 60vh;
-    background-image:linear-gradient(rgb(0 0 0 / 0.5), rgb(0 0 0 / 1)), url(https://source.unsplash.com/selective-focus-photography-of-person-using-tablet-computer-09nSGnb8ivA);
+    background-image:linear-gradient(rgb(0 0 0 / 0.5), rgb(0 0 0 / 1)), url(https://source.unsplash.com/white-boat-dock-on-seashore-near-green-trees-during-daytime-UxzDksvcWcY);
   }
   .Youtube_header_title{
     width: 90%;
@@ -932,14 +938,13 @@
   }
   .Yt_card p{
     margin-top: 5px;
-    /* position: absolute;
-    left: 50%;
-    bottom: 10%; */
-    /* margin-left: 10px; */
     font-size: 12px;
     color: #777;
     font-weight: bold;
     letter-spacing: normal;
+  }
+  .YtSearch {
+    padding: 0 30px;
   }
 }
 @media (max-width:390px){
